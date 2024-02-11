@@ -1,0 +1,1242 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body {
+    background-image: url("./line-bgimg.jpg");
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    transition: transform 3s, box-shadow;
+}
+
+.cards .card-body {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.cards img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.cards:hover {
+    box-shadow: 0px 0px 0px 0px red;
+    transform: scale(1.05);
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+
+/* awavesom-font bars-block( It works when the screen decreases(max-width:1050) */
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    margin: auto;
+    line-height: 70px;
+    margin-right: -15px;
+    cursor: pointer;
+    display: none;
+}
+
+.checkbtn i {
+    float: right;
+    font-size: 40px;
+}
+
+#check {
+    display: none;
+    position: relative;
+}
+
+
+/* ======== Grid-rating button ======= */
+.rate button{
+    display: flex;
+    width: 59px;
+    border-radius: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    float: right;
+}
+.rate b{
+    color: white;
+}
+.rate svg{
+    margin-top: 4px;
+
+}
+
+.nav-select{
+    margin: auto;
+    display: flex;
+    width: 600px;
+    align-items: center;
+    justify-content: space-between;
+    color: yellow;
+}
+.nav-select>button{
+    width: 150px;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 1.1em;
+}
+.nav-select>button>a{
+    text-decoration: none;
+}
+.nav-select>h3{
+    font-size: 1.5rem;
+}
+.select{
+    margin: auto;
+    /* border: solid; */
+    width: 700px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.select>button{
+    font-size: 1.1em;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+}
+
+/* ========    MEDIA QUERY FOR LARGE :-moz-full-screen  ========= */
+@media (min-width: 1025px) {
+    .carousel-inner img {
+        transition: transform 3s;
+        transform: scale(1.5)
+    }
+    
+    .carousel-inner img:hover {
+        transform: scale(1.1) translate(-50px, -50px);
+    
+    }
+    
+    #carouselExample img {
+        height: 500px;
+    }
+    
+    #carouselExample {
+        width: 90%;
+        margin: auto;
+        transition: transform 2s;
+        transform: translate(-50px,100px);
+    }
+    #carouselExample:hover{
+        transform: translate(0px,0px);
+        .top-carousel{
+            height: 300px;
+    
+        }
+    }
+    .top-carousel{
+        /* margin-top: 25px; */
+        width: 100%;
+        height: 600px;
+        /* background: #bbff00; */
+        background-image: url("./कुछ\ ग़लत\ हो\ सकता\ है.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+/* ======== Hyderabad-carousel and Bengaluru-carousel ====== */
+    .bg-Hyderabad-carousel{
+        width: 100%;
+        height: 600px;
+        /* background: #bbff00; */
+        background-image: url("./कुछ\ ग़लत\ हो\ सकता\ है.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    #Hyderabad-carousel {
+        width: 91%;
+        margin: auto;
+        transition: transform 2s;
+        transform: translate(50px,100px);
+    }
+    #Hyderabad-carousel:hover{
+        transform: translate(0px,0px);
+    }
+    #Hyderabad-carousel img {
+        height: 500px;
+    }
+
+    .bg-Bengaluru-carousel{
+        width: 100%;
+        height: 600px;
+        /* background: #bbff00; */
+        background-image: url("./कुछ\ ग़लत\ हो\ सकता\ है.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    #Bengaluru-carousel {
+        width: 91%;
+        margin: auto;
+        transition: transform 2s;
+        transform: translate(5px,100px);
+    }
+    #Bengaluru-carousel:hover{
+        transform: translate(0px,0px);
+    }
+    #Bengaluru-carousel img {
+        height: 500px;
+    }
+/* ======= LoGo block of code ======== */
+    .nav>div:nth-child(1) {
+        transition: transform 2s, rotate;
+        animation: slide 2s 2;
+        z-index: 2;
+    }
+
+    .nav>div:nth-child(1):hover {
+        transform: translate(600px, 100px) scale(2) rotate(720deg);
+    }
+
+    /* lOGO animation section */
+    @keyframes slide {
+        100% {
+            transform: translate(600px, 100px) scale(2) rotate(720deg);
+
+        }
+    }
+
+    nav {
+        width: 100%;
+        height: 12%;
+        margin-top: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: gray;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        float: left;
+    }
+
+    .logo {
+        /* width: 100px;
+        height: 100px; */
+        z-index: 1;
+        position: relative;
+        margin: 5px;
+        margin-bottom: 45px;
+        /* margin-top: 0px; */
+    }
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+        border-radius: 8px;
+        position: absolute;
+        z-index: 1;
+
+    }
+
+    #img_div {
+        margin-top: 18px;
+        margin-left: 15px;
+    }
+
+    /* ============ Nav-Items section ================== */
+
+
+    .select-andhra {
+        display: flex;
+        align-items: center;
+    }
+
+    .select-andhra h3 {
+        border: 1.2px solid;
+        margin-top: 100px;
+        color: orange;
+        width: 240px;
+        border-radius: 5px;
+    }
+
+    .row-andhra {
+        margin-top: 100px;
+        margin-left: 130px;
+        display: flex;
+        gap: 30px;
+    }
+
+    .a-col-1 {
+        font-size: 1.4em;
+        color: aqua;
+    }
+
+    #a-select,
+    #b-select,
+    #h-select {
+        width: 160px;
+        height: 35px;
+    }
+
+    .city-row {
+        /* border:solid; */
+        margin: 100px 0px 0px;
+        display: flex;
+        align-items: center;
+    }
+
+    .city-row h3 {
+        border: 0.5px solid;
+        color: orange;
+        border-radius: 5px;
+    }
+
+    .row-hyd, .row-bang {
+        display: flex;
+        margin-left: 212px;
+    }
+
+    /* ========== Grid - Cards =========== */
+    .main-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+        margin: 50px;
+    }
+
+    .cards {
+        margin: auto;
+    }
+
+    .main-grid .cards .card-img {
+        width: 350px;
+        height: 250px;
+    }
+
+    .main-grid .cards .card-body {
+        width: 350px;
+        height: 300px;
+        background: #f5f2f0;
+        color: rgb(64, 68, 54);
+        padding: 10px 15px;
+    }
+    /* ======== Grid-rating button ======= */
+
+    .btns {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .btns button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        height: 35px;
+        width: 100px;
+        background-color:palevioletred;
+    }
+
+    .btns a {
+        color:white;
+        text-decoration: none;
+    }
+
+    .btns button:hover {
+        background: green;
+
+    }
+
+    .btns a:hover {
+        color: white;
+    }
+
+
+    /* ========== foooter block ======== */
+    .footer {
+        font-size: 20px;
+        width: 100%;
+        height: auto;
+        background: rgba(202, 65, 65, 0.911);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px;
+    }
+
+    .copy-right {
+        font-size: 18px;
+    }
+}
+
+
+/* ========    MEDIA QUERY FOR LARGE :LAPTOP FULL-screen  ========= */
+@media (min-width: 769px) and (max-width:1024px) {
+
+    .carousel-inner img {
+        transition: transform 3s;
+        transform: scale(1.5)
+    }
+    
+    .carousel-inner img:hover {
+        transform: scale(1.1) translate(-50px, -50px);
+    
+    }
+    
+    #carouselExample img {
+        height: 500px;
+    }
+    
+    #carouselExample {
+        width: 90%;
+        margin: auto;
+        transition: transform 2s;
+        transform: translate(-50px,100px);
+    }
+    #carouselExample:hover{
+        transform: translate(0px,0px);
+        .top-carousel{
+            height: 300px;
+    
+        }
+    }
+    .top-carousel{
+        width: 100%;
+        height: 600px;
+        /* background: #bbff00; */
+        background-image: url("./कुछ\ ग़लत\ हो\ सकता\ है.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+/* ======== Hyderabad-carousel and Bengaluru-carousel ====== */
+    .bg-Hyderabad-carousel{
+        width: 100%;
+        height: 600px;
+        margin-top: 60px;
+        /* background: #bbff00; */
+        background-image: url("./कुछ\ ग़लत\ हो\ सकता\ है.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    #Hyderabad-carousel {
+        width: 91%;
+        margin: auto;
+        transition: transform 2s;
+        transform: translate(50px,100px);
+    }
+    #Hyderabad-carousel:hover{
+        transform: translate(0px,0px);
+    }
+    #Hyderabad-carousel img {
+        height: 500px;
+    }
+
+    .bg-Bengaluru-carousel{
+        width: 100%;
+        height: 600px;
+        margin-top: 60px;
+        /* background: #bbff00; */
+        background-image: url("./कुछ\ ग़लत\ हो\ सकता\ है.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    #Bengaluru-carousel {
+        width: 91%;
+        margin: auto;
+        transition: transform 2s;
+        transform: translate(5px,100px);
+    }
+    #Bengaluru-carousel:hover{
+        transform: translate(0px,0px);
+    }
+    #Bengaluru-carousel img {
+        height: 500px;
+    }
+
+    /* ========== LOGO RESPONSIVE ========= */
+
+    .nav>div:nth-child(1) {
+        transition: transform 2s, rotate;
+        animation: slide 3s 1;
+        z-index: 2;
+    }
+
+    .nav>div:nth-child(1):hover {
+        transform: translate(300px, 250px) scale(4) rotate(720deg);
+    }
+
+    /* lOGO animation section */
+    @keyframes slide {
+        100% {
+            transform: translate(300px, 250px) scale(5) rotate(720deg);
+
+        }
+    }
+
+    nav {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: gray;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        float: left;
+    }
+
+    .logo {
+        /* width: 100px;
+        height: 100px; */
+        z-index: 1;
+        position: relative;
+        margin: 5px;
+        margin-bottom: 45px;
+        /* margin-top: 0px; */
+    }
+    .logo img {
+        width: 50px;
+        height: 50px;
+        border-radius: 8px;
+        position: absolute;
+        z-index: 1;
+        border: 1.1px solid;
+    }
+
+    #img_div {
+        /* width: 50px; */
+        margin-top: 18px;
+        margin-left: 15px;
+    }
+
+    /* ============ Nav-Items section ================== */
+
+    .nav-row {
+        /* margin-bottom: 10px; */
+        border-radius: 5px;
+        display: flex;
+        background: #bbff00;
+    }
+
+    .nav-row>div {
+        padding: 10px 10px 10px 10px;
+    }
+
+    .nav-col-1 label {
+        font-size: 1.4em;
+    }
+
+    /* .nav-col-2{
+        background: red;
+    } */
+    #Area {
+        height: 35px;
+        width: 160px;
+        /* border-radius: 10px; */
+    }
+
+    .login-container {
+        /* border: solid; */
+        display: flex;
+
+    }
+    .login-container input {
+        padding: 10px 10px 10px 10px;
+    }
+
+    .login-container input {
+        width: 30%;
+        height: 35px;
+        border-radius: 10px;
+        padding-left: 15px;
+    }
+
+    .login-container .button {
+        background: white;
+        width: 15%;
+        height: 32px;
+        /* margin-bottom: 10px; */
+        padding-bottom: 0px;
+        padding-top: 0px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .login-container .button:hover {
+        background: #ccc;
+    }
+
+    .select-andhra {
+        /* border: solid; */
+       margin-top: 80px;
+        display: flex;
+        align-items: center;
+        /* justify-content: space-between; */
+    }
+
+    .select-andhra h3 {
+        border: 0.5px solid;
+        color: orange;
+        width: 220px;
+
+    }
+
+    .row-andhra {
+        /* border: 0.5px solid; */
+        display: flex;
+        margin-left: 210px;
+        gap: 40px;
+    }
+
+    .a-col-1 {
+        font-size: 1.4em;
+        color: aqua;
+    }
+
+    #a-select,
+    #b-select,
+    #h-select {
+        width: 160px;
+        height: 35px;
+    }
+
+    .city-row {
+        /* border:solid; */
+        margin: 80px 120px -40px;
+        display: flex;
+        align-items: center;
+    }
+
+    .city-row h3 {
+        border: 0.5px solid;
+        color: orange;
+        /* width: 220px; */
+    }
+
+    .row-hyd,
+    .row-bang {
+        /* border: solid; */
+        display: flex;
+        margin-left: 120px;
+        gap: 10px;
+
+    }
+
+
+    /* ===== Grid ITEMS animation ====== */
+    .main-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
+        margin: 100px;
+        /* margin-left: 100px; */
+    }
+
+    .cards {
+        margin: auto;
+    }
+
+    .main-grid .cards .card-img {
+        width: 350px;
+        height: 250px;
+    }
+
+    .main-grid .cards .card-body {
+        width: 350px;
+        height: 300px;
+        background: #f5f2f0;
+        color: rgb(64, 68, 54);
+        padding: 20px 15px;
+    }
+
+    .btns {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* border: solid; */
+    }
+
+    .btns button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3px;
+        height: 30px;
+    }
+
+    .btns a {
+        /* margin-left: 10px; */
+        text-decoration: none;
+    }
+
+    .btns button:hover {
+        background: green;
+
+    }
+
+    .btns a:hover {
+        color: white;
+    }
+
+    .footer {
+        font-size: 22px;
+        width: 100%;
+        height: auto;
+        background: rgba(202, 65, 65, 0.911);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px;
+    }
+
+    .copy-right {
+        font-size: 20px;
+    }
+}
+
+/* ========    MEDIA QUERY FOR LARGE :TABLET FULL-screen  ========= */
+@media (min-width: 426px) and (max-width:768px) {
+
+    #carouselExample img {
+        height: 400px;
+    }
+
+    /* ========== LOGO RESPONSIVE ========= */
+    .nav>div:nth-child(1) {
+        transition: transform 2s, rotate;
+        animation: slide 3s 1;
+        z-index: 2;
+    }
+
+    .nav>div:nth-child(1):hover {
+        transform: translate(150px, 150px) scale(2) rotate(720deg);
+    }
+
+    /* lOGO animation section */
+    @keyframes slide {
+        100% {
+            transform: translate(150px, 150px) scale(2) rotate(720deg);
+
+        }
+    }
+
+    nav {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        background: gray;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        /* float: left; */
+    }
+
+    .logo {
+        /* width: 100px;
+        height: 100px; */
+        z-index: 1;
+        position: relative;
+        margin: 5px;
+        margin-bottom: 45px;
+        /* margin-top: 0px; */
+    }
+    .logo img {
+        width: 50px;
+        height: 50px;
+        border-radius: 8px;
+        position: absolute;
+        z-index: 1;
+        border: 1.1px solid;
+    }
+
+    #img_div {
+        margin-top: 18px;
+        margin-left: 15px;
+    }
+
+    /* ============ Nav-Items section ================== */
+
+    .nav-row {
+        display: flex;
+        color: #bbff00;
+        align-items: center;
+        margin-bottom: 10px;
+        /* border: solid; */
+
+    }
+
+    .nav-col-1 label {
+        font-size: 1.4em;
+    }
+
+    /* .nav-col-2{
+        background: red;
+    } */
+    #Area {
+        height: 35px;
+        width: 150px;
+        border-radius: 5px;
+    }
+
+    .select-andhra {
+        /* border: solid; */
+        margin:80px 0px 0px;
+        display: flex;
+        align-items: center;
+    }
+
+    .select-andhra h3 {
+        font-size: 1.5em;
+        border: 0.5px solid;
+        color: orange;
+        width: 200px;
+        border-radius: 5px;
+        margin-top: 30px;
+    }
+
+    .row-andhra {
+        /* border: 0.5px solid; */
+        display: flex;
+        flex-direction: column;
+        margin-left: -20px;  
+    }
+
+    .a-col-1,
+    .a-col-2 {
+        /* border: 0.5px solid; */
+        display: flex;
+        flex-direction: column;
+        margin-left: 120px;
+
+    }
+
+    .a-col-1 {
+        font-size: 1.3em;
+        color: aqua;
+    }
+
+    #a-select,
+    #b-select,
+    #h-select {
+        width: 170px;
+        height: 30px;
+        border-radius: 5px;
+    }
+
+    .city-row {
+        border:solid;
+        margin: 80px 85px 0px;
+        display: flex;
+        align-items: center;
+    }
+
+    .city-row h3 {
+        border: 0.5px solid;
+        color: orange;
+        width: 150px;
+    }
+
+    .row-hyd,
+    .row-bang {
+        /* border: 0.5px solid; */
+        display: flex;
+        flex-direction: column;
+        margin-left: 120px;
+
+    }
+
+    /* ===== Grid ITEMS animation ====== */
+    .main-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        padding: 50px;
+    }
+
+    .cards {
+        margin: auto;
+
+    }
+
+    .main-grid .cards .card-img {
+        width: 250px;
+        height: 200px;
+    }
+
+    .main-grid .cards .card-body {
+        width: 250px;
+        height: 350px;
+        background: #f5f2f0;
+        color: rgb(64, 68, 54);
+        padding: 20px 15px;
+    }
+
+    .btns {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* border: solid; */
+    }
+
+    .btns button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3px;
+        height: 30px;
+    }
+
+    .btns a {
+        /* margin-left: 10px; */
+        text-decoration: none;
+    }
+
+    .btns button:hover {
+        background: green;
+
+    }
+
+    .btns a:hover {
+        color: white;
+    }
+
+    .copy-right {
+        font-size: 13px;
+    }
+
+    .footer {
+        width: 100%;
+        height: auto;
+        background: rgba(202, 65, 65, 0.911);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px;
+    }
+}
+
+/* ========    MEDIA QUERY FOR LARGE :MOBILE FULL-screen  ========= */
+@media (min-width:10px) and (max-width:425px) {
+    #carouselExample img {
+        height: 250px;
+        width: 100%;
+    }
+
+    #carouselExample {
+        width: 100%;
+        margin: auto;
+    }
+
+    /* ========== LOGO RESPONSIVE ========= */
+    .nav>div:nth-child(1) {
+        transition: transform 2s;
+        animation: slide 3s 1;
+        z-index: 2;
+    }
+
+    .nav>div:nth-child(1):hover {
+        transform: translate(50px, 50px) scale(1) rotate(720deg);
+    }
+
+    /* ==== lOGO animation section ====== */
+    @keyframes slide {
+        100% {
+            transform: translate(50px, 50px) scale(1) rotate(720deg);
+
+        }
+    }
+
+    nav {
+        width: 100%;
+        height: 0%;
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        background: gray;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        /* float: left; */
+    }
+
+    .logo {
+        z-index: 1;
+        /* margin: 0px 5px 10px; */
+        margin-top: 0px;
+    }
+
+    .logo img {
+        width: 35px;
+        height: 35px;
+        border-radius: 8px;
+        position: absolute;
+        z-index: 1;
+
+    }
+
+    #img_div {
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+    /* ============ Nav-Items section ================== */
+    .nav-select{
+        margin-bottom: 90px;
+        margin-left: 200px;
+        flex-direction: column;
+        /* align-items: center; */
+        color: yellow;
+    }
+    .nav-select>button{
+        width: 80px;
+        height: 20px;
+        border-radius: 8px;
+        font-size: 10px;
+    }
+    .nav-select>button>a{
+        text-decoration: none;
+    }
+    .nav-select>h3{
+        font-size: 15px;
+    }
+    
+
+    .select-andhra {
+        /* border: solid; */
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-between; */
+    }
+
+    .select-andhra h3 {
+        margin-right: 139px;
+        font-size: 1.1em;
+        border: 0.5px solid;
+        color: orange;
+        width: 153px;
+
+    }
+
+    .row-andhra {
+        /* border: 0.5px solid; */
+        display: flex;
+        flex-direction: column;
+        margin-right: 0px;
+        /* gap: 10px; */
+    }
+
+    .a-col-1,
+    .a-col-2 {
+        /* border: 0.5px solid; */
+        display: flex;
+        flex-direction: column;
+        margin-right: 90px;
+        /* margin-left: 120px; */
+
+    }
+
+    .a-col-1 {
+        /* border: solid; */
+        width: 170px;
+        font-size: 1.09em;
+        color: aqua;
+    }
+
+    #a-select,
+    #b-select,
+    #h-select {
+        width: 150px;
+        height: 28px;
+        border-radius: 5px;
+    }
+
+    .city-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+
+    .city-row h3 {
+        border: 0.5px solid;
+        color: orange;
+        width: 150px;
+        margin-right: 155px;
+    }
+
+    .row-hyd,
+    .row-bang {
+        margin-right: 135px;
+        width: 170px;
+    }
+
+
+
+    /* ===== Grid ITEMS animation ====== */
+    .main-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+        padding: 50px;
+    }
+
+    .main-grid .cards .card-img {
+        width: 230px;
+        height: 150px;
+
+    }
+
+    .main-grid .cards .card-body {
+        width: 230px;
+        height: 230px;
+        background: #f5f2f0;
+        color: rgb(64, 68, 54);
+        padding: 15px 10px 20px;
+        font-size: 10px;
+        /* row-gap: 100px; */
+    }
+
+    .btns {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* border: solid; */
+    }
+
+    .btns button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3px;
+        height: 30px;
+    }
+
+    .btns a {
+        /* margin-left: 10px; */
+        text-decoration: none;
+    }
+
+    .btns button:hover {
+        background: green;
+
+    }
+
+    .btns a:hover {
+        color: white;
+    }
+
+    .footer>div {
+        /* font-size: 11px;
+        width: 100%;
+        height: 100%;
+        background: rgba(202, 65, 65, 0.911);
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px; */
+
+        width: 100%;
+        height: auto;
+        background-color: rgba(202, 65, 65, 0.911);
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 30px;
+        margin-left: 0px;
+    }
+
+    .copy-right {
+        font-size: 13px;
+    }
+
+}
+
+
+
+/* #img_div {
+    margin-top: 25px;
+    margin-left: 35px;
+} */
+
+#img_div>div {
+    width: 20px;
+    height: 20px;
+    background: hsl(320, 100%, 59%);
+    border-radius: 50%;
+    position: absolute;
+    animation: rot 2s infinite;
+
+}
+
+@keyframes rot {
+    50% {
+        /* transform: rotate(760deg); */
+        background-color: red;
+    }
+
+    25% {
+
+        background-color: #bbff00;
+    }
+
+    75% {
+
+        background-color: hwb(39 29% 7%);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        background-color: hsl(320, 100%, 59%);
+    }
+}
+
+#img_div>div:nth-child(1) {
+    transform: translateY(150px);
+}
+
+#img_div>div:nth-child(2) {
+    transform: translateY(-150px);
+}
+
+#img_div>div:nth-child(3) {
+    transform: translate(130px, 80px);
+}
+
+#img_div>div:nth-child(4) {
+    transform: translate(-130px, 80px);
+}
+
+#img_div>div:nth-child(5) {
+    transform: translate(130px, -80px);
+}
+
+#img_div>div:nth-child(6) {
+    transform: translate(-130px, -80px);
+}
+
+/* img {
+    width: 20px;
+    height: 20px;
+} */

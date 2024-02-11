@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body {
+    background-image: url("./line-bgimg.jpg");
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+}
+
+nav {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: gray;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    float: left;
+    margin-top: 50px;
+}
+
+.nav-select{
+    margin: auto;
+    display: flex;
+    width: 600px;
+    align-items: center;
+    justify-content: space-between;
+    color: yellow;
+}
+.nav-select>button{
+    width: 150px;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 1.1em;
+}
+.nav-select>button>a{
+    text-decoration: none;
+}
+.nav-select>h3{
+    font-size: 1.5rem;
+}
+.select{
+    margin: auto;
+    /* border: solid; */
+    width: 700px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.select>button{
+    font-size: 1.1em;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+}
+
+
+.box {
+    width: 800px;
+    height: 600px;
+    box-shadow: 0px 0px 15px 20px;
+    border-radius: 20px;
+    background: white;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    /* text-align: center; */
+}
+
+.box h2 {
+    border-top-right-radius: 25px;
+    margin-left: 50px;
+    padding: 70px;
+    background: lightskyblue;
+    border-bottom-left-radius: 250px;
+    color: blue;
+}
+.box p{
+    font-size: 1.4em;
+    margin-right: 50px;
+    padding: 70px;
+    background: grey;
+    border-top-right-radius: 250px;
+}
+.box>button{
+    position: relative;
+    left: 30%;
+    font-size: 2em;
+    border-radius: 5px;
+    background: green;
+    color:wheat;
+    margin-top: 10px;
+    width: 300px;
+    height: 70px;
+}
+.box h3{
+    color: orangered;
+}
+
+
+
+
+/* ========== LOGO RESPONSIVE ========= */
+@media (min-width: 1025px) {
+    .nav>div:nth-child(1) {
+        transition: transform 2s, rotate;
+        animation: slide 2s 2;
+        z-index: 2;
+    }
+
+    .nav>div:nth-child(1):hover {
+        transform: translate(600px, 100px) scale(2) rotate(720deg);
+    }
+
+    /* lOGO animation section */
+    @keyframes slide {
+        100% {
+            transform: translate(600px, 100px) scale(2) rotate(720deg);
+
+        }
+    }
+
+    nav {
+        width: 100%;
+        height: 11%;
+        margin-top: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: gray;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        float: left;
+    }
+
+    .logo {
+        z-index: 1;
+        position: relative;
+        margin: 5px;
+        margin-bottom: 45px;
+        /* margin-top: 0px; */
+    }
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+        border-radius: 8px;
+        position: absolute;
+        z-index: 1;
+
+    }
+
+    #img_div {
+        width: 50px;
+        margin-top: 15px;
+        margin-left: 25px;
+    }
+
+    /* ============ Nav-Items section ================== */
+
+    .nav-row {
+        border-radius: 5px;
+        display: flex;
+        background: #bbff00;
+    }
+
+    .nav-row>div {
+        padding: 5px 5px 5px 5px;
+    }
+
+    .nav-col-1 label {
+        font-size: 1.5em;
+    }
+
+    /* .nav-col-2{
+        background: red;
+    } */
+    #Area {
+        height: 35px;
+        width: 160px;
+        /* border-radius: 10px; */
+    }
+
+    .login-container {
+        /* border: solid; */
+        display: flex;
+
+    }
+
+    .login-container input {
+        padding: 10px 10px 10px 10px;
+    }
+
+    .login-container input {
+        width: 25%;
+        height: 12px;
+        border-radius: 10px;
+        padding-left: 15px;
+    }
+
+    .login-container .button {
+        background: white;
+        width: 16%;
+        height: 33px;
+        /* margin-bottom: 10px; */
+        padding-bottom: 0px;
+        padding-top: 0px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .login-container .button:hover {
+        background: #ccc;
+    }
+}
+
+#img_div>div {
+    width: 20px;
+    height: 20px;
+    background: hsl(320, 100%, 59%);
+    border-radius: 50%;
+    position: absolute;
+    animation: rot 2s infinite;
+
+}
+
+@keyframes rot {
+    50% {
+        /* transform: rotate(760deg); */
+        background-color: red;
+    }
+
+    25% {
+
+        background-color: #bbff00;
+    }
+
+    75% {
+
+        background-color: hwb(39 29% 7%);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        background-color: hsl(320, 100%, 59%);
+    }
+}
+
+#img_div>div:nth-child(1) {
+    transform: translateY(150px);
+}
+
+#img_div>div:nth-child(2) {
+    transform: translateY(-150px);
+}
+
+#img_div>div:nth-child(3) {
+    transform: translate(130px, 80px);
+}
+
+#img_div>div:nth-child(4) {
+    transform: translate(-130px, 80px);
+}
+
+#img_div>div:nth-child(5) {
+    transform: translate(130px, -80px);
+}
+
+#img_div>div:nth-child(6) {
+    transform: translate(-130px, -80px);
+}

@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./direction-arrow.png">
+    <title>Coose the best~</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+   
+    <nav class="nav">
+        <div class="logo">
+            <img src="./direction-arrow.png" alt="Logo">
+            <div id="img_div">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-balloon-heart" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398" />
+                    </svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-balloon-heart" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398" />
+                    </svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-balloon-heart" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398" />
+                    </svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-balloon-heart" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398" />
+                    </svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-balloon-heart" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398" />
+                    </svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-balloon-heart" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398" />
+                    </svg>
+                </div>
+                <!-- <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-balloon-heart" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398" />
+                        </svg>
+                    </div> -->
+            </div>
+        </div>
+        <div class="nav-select">
+            <button><a href="./home.html"><strong>Home</strong></a></button>
+            <h3>Select City:~</h3>
+            <button><a href="./andhra.html"><strong>Vijayawada</strong></a></button>
+            <button><a href="./bengaluru.html"><strong>Bengaluru</strong></a></button>
+                </div>
+       
+
+    </nav>
+    <!-- ======== Hyderabad block ======== -->
+
+    <div class="city-row" id="Hyderabad">
+        <div>
+            <h3 class="hyd-h1">Hyderabad::</h3>
+        </div>
+        <div class="container">
+            <form action="/">
+                <div class="row-hyd">
+                    <div class="a-col-1">
+                        <label for="country"><b>Select Restaurant:</b></label>
+                    </div>
+                    <div class="a-col-2">
+                        <select id="h-select" name="country">
+                            <option value="./Index.html">Nove - The Italian Kitchen</option>
+                            <option value="./bengaluru.html">Simply South</option>
+                            <option value="./Index.html">ZYTHUM Brewing Co.</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function redirect(selectElement) {
+            var selectedOption = selectElement.value;
+            if (selectedOption !== "") {
+                window.location.href = selectedOption;
+            }
+        }
+    </script>
+    
+    <!-- ===============  Hederabad Carousel ============= -->
+    <div class="bg-Hyderabad-carousel">
+        <div id="Hyderabad-carousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://b.zmtcdn.com/data/pictures/9/20385689/bacd8897513c266c5356b20bf3fc18b5.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://b.zmtcdn.com/data/pictures/9/18843699/565978a181e8ae4ab11218dd423e1695.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://b.zmtcdn.com/data/pictures/1/20556961/f177cec2179089ab3793cb415cb9725b.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="//b.zmtcdn.com/data/pictures/5/19294965/45fb0acdd7052171cc0e5c793f129319.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"
+                        class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#Hyderabad-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#Hyderabad-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- ============= Hyderabad-grid-items ========= -->
+    <section>
+        <div class="main-grid">
+            <div class="cards" id="Nove">
+                <div class="card-img"><img
+                        src="https://b.zmtcdn.com/data/pictures/2/20496432/d318cf61b579cfeca96870b71c29ea5e.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
+                        alt="chicken_biryani"></div>
+                <div class="card-body">
+                    <p> <b class="rate">Nove - The Italian Kitchen
+                            <button type="button" class="btn btn-success"><b>4.8</b>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </button>
+                            <hr>
+                        </b></p>
+
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Mutton Pepper Fry
+                    </strong> <br>
+
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Aglioe Olio Pasta
+                    </strong> <br>
+
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Chicken Tikka Masala
+                    </strong> <br>
+
+                    <strong>Enjoy your mother’s delicious creation!🍽️🥘 </strong>
+                    <br>
+                    <div class="btns"><button class="btn-1"><a
+                                href="https://www.google.com/maps/dir/?api=1&destination=17.4116501956,78.4288882600">Direction</a></button>
+                        <button class="btn-2"><a
+                                href="https://www.zomato.com/hyderabad/nove-the-italian-kitchen-banjara-hills/info">See
+                                more</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards" id="Simply">
+                <div class="card-img"> <img
+                        src="https://b.zmtcdn.com/data/reviews_photos/f34/9513a529c275d0df1008256f7a698f34_1487482522.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
+                        alt="chicken_fry">
+                </div>
+                <div class="card-body">
+                    <b class="rate">Simply South
+                        <button type="button" class="btn btn-success"><b>4.4</b>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </button>
+
+                        <hr>
+                    </b>
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Chicken Biryan</strong><br>
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Carrier Meal</strong> <br>
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Mutton Curry</strong><br>
+
+                    <strong>Enjoy your mother’s delicious creation!🍽️🥘 </strong>
+                    <div class="btns"><button class="btn-1"><a
+                                href="https://www.google.com/maps/dir/?api=1&destination=17.4161984713,78.4100719169">Direction</a></button>
+                        <button class="btn-2"><a
+                                href="https://www.zomato.com/hyderabad/simply-south-jubilee-hills/info">See more
+                            </a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards" id="ZYTHUM ">
+                <div class="card-img"><img
+                        src="https://b.zmtcdn.com/data/pictures/3/20598223/24e597bd286f3adeb21896b5a78e281c.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
+                        alt="fish_curry"></div>
+                <div class="card-body">
+                    <p>
+                        <b class="rate">ZYTHUM Brewing Co.
+                            <button type="button" class="btn btn-success"><b>4.5</b>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </button>
+                            <hr>
+                        </b>
+                        <hr>
+                    </p>
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Chicken Tikka Masala
+                    </strong> <br>
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Chicken Ghee Roast
+                    </strong> <br>
+
+                    <strong>Enjoy your mother’s delicious creation!🍽️🥘 </strong>
+                    <br>
+                    <div class="btns"><button class="btn-1"><a
+                                href="https://www.google.com/maps/dir/?api=1&destination=17.4292827000,78.4184170000">Direction</a></button>
+                        <button class="btn-2"><a
+                                href="https://www.zomato.com/hyderabad/zythum-brewing-co-jubilee-hills/info">See more
+                            </a></button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card-img"><img src="./Grid-imgs/fish fry.jpg" alt="fish_fry"></div>
+                <div class="card-body">
+                    <p> <b class="rate">Nove - The Italian Kitchen
+                            <button type="button" class="btn btn-success"><b>4.8</b>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </button>
+                            <hr>
+                        </b></p>
+
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Mutton Pepper Fry
+                    </strong> <br>
+
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Aglioe Olio Pasta
+                    </strong> <br>
+
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Chicken Tikka Masala
+                    </strong> <br>
+
+                    <strong>Enjoy your mother’s delicious creation!🍽️🥘 </strong>
+                    <br>
+                    <div class="btns"><button class="btn-1"><a
+                                href="https://www.google.com/maps/dir/?api=1&destination=17.4116501956,78.4288882600">Direction</a></button>
+                        <button class="btn-2"><a
+                                href="https://www.zomato.com/hyderabad/nove-the-italian-kitchen-banjara-hills/info">See
+                                more</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card-img"> <img src="./Grid-imgs/mutton_biryani.jpg" alt="Mutton-biryani"></div>
+                <div class="card-body">
+                    <b class="rate">Simply South
+                        <button type="button" class="btn btn-success"><b>4.4</b>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </button>
+
+                        <hr>
+                    </b>
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Chicken Biryan</strong><br>
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Carrier Meal</strong> <br>
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Mutton Curry</strong><br>
+
+                    <strong>Enjoy your mother’s delicious creation!🍽️🥘 </strong>
+                    <div class="btns"><button class="btn-1"><a
+                                href="https://www.google.com/maps/dir/?api=1&destination=17.4161984713,78.4100719169">Direction</a></button>
+                        <button class="btn-2"><a
+                                href="https://www.zomato.com/hyderabad/simply-south-jubilee-hills/info">See more
+                            </a></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="cards">
+                <div class="card-img"> <img src="./Grid-imgs/mutton curry.jpg" alt="Mutton-curry"></div>
+                <div class="card-body">
+                    <p> <b class="rate">The Bier Library
+                            <button type="button" class="btn btn-success"><b>4.5</b>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </button>
+                            <hr>
+                        </b></p>
+
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Mutton Pepper Fry
+                    </strong> <br>
+
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Aglioe Olio Pasta
+                    </strong> <br>
+
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Chicken Tikka Masala
+                    </strong> <br>
+
+                    <strong>Enjoy your mother’s delicious creation!🍽️🥘 </strong>
+                    <br>
+                    <div class="btns"><button class="btn-1"><a
+                                href="https://www.google.com/maps/dir/?api=1&destination=16.5003484444,80.6458269060">Direction</a></button>
+                        <button class="btn-2"><a
+                                href="https://www.zomato.com/bangalore/meghana-foods-residency-road/reviews">See
+                                more</a>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========= Hyderabad Script Code ====== -->
+    <script>
+        document.getElementById('h-select').addEventListener('change', function () {
+            var selectedValue = this.value;
+            if (selectedValue) {
+                document.querySelector(selectedValue).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    </script>
+
+</body>
+<footer class="footer">
+    <div class="contact">
+        <p> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-telephone-plus" viewBox="0 0 16 16">
+                <path
+                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                <path fill-rule="evenodd"
+                    d="M12.5 1a.5.5 0 0 1 .5.5V3h1.5a.5.5 0 0 1 0 1H13v1.5a.5.5 0 0 1-1 0V4h-1.5a.5.5 0 0 1 0-1H12V1.5a.5.5 0 0 1 .5-.5" />
+            </svg>
+            <strong>Phone: <br><span style=" color: rgba(197, 197, 211, 0.733);">+91 6366908423</span></strong>
+        </p>
+        <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-envelope-check" viewBox="0 0 16 16">
+                <path
+                    d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z" />
+                <path
+                    d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686" />
+            </svg>
+            <strong>Eamil: <br>
+                <strong style=" color: rgba(197, 197, 211, 0.733);">amarendraeediga@gamil.com</strong>
+            </strong>
+        </p>
+
+    </div>
+    <div>
+        <p>
+            <strong style="color: black;">You can also contact me through the social media messages.</strong>
+        </p>
+        <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
+                viewBox="0 0 16 16">
+                <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+            </svg>
+
+            <a href="https://www.instagram.com/eedigaamarendragowd/"><strong
+                    style="color:rgba(197, 197, 211, 0.733);">Instagram:</strong></a> <br>
+
+        </p>
+        <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook"
+                viewBox="0 0 16 16">
+                <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+            </svg>
+
+            <a href="https://www.facebook.com/amarendra.eedega/"><strong
+                    style="color: rgba(197, 197, 211, 0.733);;">Facebook</strong></a> <br>
+        </p>
+
+        <hr>
+        <p class="copy-right">©Amarendra 2024 All rights reserved.</p>
+    </div>
+
+    <!-- <br> -->
+
+
+    <!-- <div>
+        <img src="https://www.cookwithnabeela.com/wp-content/uploads/2023/07/ChickenTIkka.webp" alt=""
+            style="width: 400px; height: 300px; border-radius: 10px; background-size: cover; background-position: center;">
+    </div> -->
+
+</footer>
+
+</html>
