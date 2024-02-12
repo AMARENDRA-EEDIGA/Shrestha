@@ -72,7 +72,9 @@
             </div>
         </div>
         <div class="nav-select">
-            <button><a href="./home.html"><strong>Home</strong></a></button>
+            <button class="home"><a href="./home.html"><strong>Home</strong></a></button>
+        </div>
+        <div class="nav-select">
             <h3>Select City:~</h3>
             <button><a href="./andhra.html"><strong>Vijayawada</strong></a></button>
             <button><a href="./bengaluru.html"><strong>Bengaluru</strong></a></button>
@@ -93,10 +95,26 @@
                         <label for="country"><b>Select Restaurant:</b></label>
                     </div>
                     <div class="a-col-2">
-                        <select id="h-select" name="country">
-                            <option value="./Index.html">Nove - The Italian Kitchen</option>
-                            <option value="./bengaluru.html">Simply South</option>
-                            <option value="./Index.html">ZYTHUM Brewing Co.</option>
+                        <select id="h-restaurant-select" name="country">
+                            <option value="#Nove">Nove-The Italian Kitchen</option>
+                            <option value="#Simply">Simply South</option>
+                            <option value="#ZYTHUM">ZYTHUM Brewing Co.</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="container">
+            <form action="/">
+                <div class="row-hyd">
+                    <div class="a-col-1">
+                        <label for="country"><b>Select Restaurant:</b></label>
+                    </div>
+                    <div class="a-col-2">
+                        <select id="h-dish-select" name="country">
+                            <option value="#Nove">Nove-The Italian Kitchen</option>
+                            <option value="#Simply">Simply South</option>
+                            <option value="#ZYTHUM">ZYTHUM Brewing Co.</option>
                         </select>
                     </div>
                 </div>
@@ -118,11 +136,11 @@
         <div id="Hyderabad-carousel" class="carousel slide">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="https://b.zmtcdn.com/data/pictures/9/20385689/bacd8897513c266c5356b20bf3fc18b5.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
+                    <img src="https://b.zmtcdn.com/data/pictures/9/18843699/565978a181e8ae4ab11218dd423e1695.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
                         class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://b.zmtcdn.com/data/pictures/9/18843699/565978a181e8ae4ab11218dd423e1695.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
+                    <img src= "https://b.zmtcdn.com/data/pictures/9/20385689/bacd8897513c266c5356b20bf3fc18b5.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
                         class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
@@ -457,7 +475,7 @@
 
     <!-- ========= Hyderabad Script Code ====== -->
     <script>
-        document.getElementById('h-select').addEventListener('change', function () {
+        document.getElementById('h-restaurant-select').addEventListener('change', function () {
             var selectedValue = this.value;
             if (selectedValue) {
                 document.querySelector(selectedValue).scrollIntoView({
@@ -495,7 +513,7 @@
     </div>
     <div>
         <p>
-            <strong style="color: black;">You can also contact me through the social media messages.</strong>
+            <strong>You can also contact me through the social media messages.</strong>
         </p>
         <p>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"

@@ -72,7 +72,7 @@ body {
 
 
 /* ======== Grid-rating button ======= */
-.rate button{
+.rate button {
     display: flex;
     width: 59px;
     border-radius: 5px;
@@ -80,35 +80,43 @@ body {
     padding-bottom: 0px;
     float: right;
 }
-.rate b{
+
+.rate b {
     color: white;
 }
-.rate svg{
-    margin-top: 4px;
 
+.rate svg {
+    margin-top: 4px;
 }
 
-.nav-select{
+.nav-select .home{
+    margin-left: 50px;
+}
+.nav-select {
     margin: auto;
     display: flex;
     width: 600px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     color: yellow;
 }
-.nav-select>button{
+
+.nav-select>button {
     width: 150px;
     height: 40px;
     border-radius: 8px;
     font-size: 1.1em;
 }
-.nav-select>button>a{
+
+.nav-select>button>a {
     text-decoration: none;
 }
-.nav-select>h3{
+
+.nav-select>h3 {
     font-size: 1.5rem;
 }
-.select{
+
+.select {
     margin: auto;
     /* border: solid; */
     width: 700px;
@@ -117,7 +125,8 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-.select>button{
+
+.select>button {
     font-size: 1.1em;
     border-radius: 5px;
     width: 150px;
@@ -130,62 +139,65 @@ body {
         transition: transform 3s;
         transform: scale(1.5)
     }
-    
+
     .carousel-inner img:hover {
         transform: scale(1.1) translate(-50px, -50px);
-    
+
     }
-    
+
     #carouselExample img {
         height: 500px;
     }
-    
+
     #carouselExample {
         width: 90%;
         margin: auto;
         transition: transform 2s;
-        transform: translate(-50px,100px);
+        transform: translate(-50px, 100px);
     }
-    #carouselExample:hover{
-        transform: translate(0px,0px);
-        .top-carousel{
+
+    #carouselExample:hover {
+        transform: translate(0px, 0px);
+
+        .top-carousel {
             height: 300px;
-    
+
         }
     }
-    .top-carousel{
-        /* margin-top: 25px; */
+
+    .top-carousel {
         width: 100%;
         height: 600px;
-        /* background: #bbff00; */
         background-image: url("./कुछ\ ग़लत\ हो\ सकता\ है.jpg");
         background-position: center;
         background-size: cover;
     }
 
-/* ======== Hyderabad-carousel and Bengaluru-carousel ====== */
-    .bg-Hyderabad-carousel{
+    /* ======== Hyderabad-carousel and Bengaluru-carousel ====== */
+    .bg-Hyderabad-carousel {
         width: 100%;
-        height: 600px;
-        /* background: #bbff00; */
+        height: 500px;
         background-image: url("./कुछ\ ग़लत\ हो\ सकता\ है.jpg");
         background-position: center;
         background-size: cover;
     }
+
     #Hyderabad-carousel {
         width: 91%;
         margin: auto;
         transition: transform 2s;
-        transform: translate(50px,100px);
-    }
-    #Hyderabad-carousel:hover{
-        transform: translate(0px,0px);
-    }
-    #Hyderabad-carousel img {
-        height: 500px;
+        transform: translate(50px, 100px);
     }
 
-    .bg-Bengaluru-carousel{
+    #Hyderabad-carousel:hover {
+        transform: translate(0px, 0px);
+    }
+
+    #Hyderabad-carousel img {
+        height: 400px;
+    }
+
+    .bg-Bengaluru-carousel {
         width: 100%;
         height: 600px;
         /* background: #bbff00; */
@@ -193,19 +205,23 @@ body {
         background-position: center;
         background-size: cover;
     }
+
     #Bengaluru-carousel {
         width: 91%;
         margin: auto;
         transition: transform 2s;
-        transform: translate(5px,100px);
+        transform: translate(5px, 100px);
     }
-    #Bengaluru-carousel:hover{
-        transform: translate(0px,0px);
+
+    #Bengaluru-carousel:hover {
+        transform: translate(0px, 0px);
     }
+
     #Bengaluru-carousel img {
         height: 500px;
     }
-/* ======= LoGo block of code ======== */
+
+    /* ======= LoGo block of code ======== */
     .nav>div:nth-child(1) {
         transition: transform 2s, rotate;
         animation: slide 2s 2;
@@ -226,7 +242,7 @@ body {
 
     nav {
         width: 100%;
-        height: 12%;
+        height: 15%;
         margin-top: 0px;
         display: flex;
         align-items: center;
@@ -239,18 +255,15 @@ body {
     }
 
     .logo {
-        /* width: 100px;
-        height: 100px; */
         z-index: 1;
         position: relative;
         margin: 5px;
         margin-bottom: 45px;
-        /* margin-top: 0px; */
     }
 
     .logo img {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         border-radius: 8px;
         position: absolute;
         z-index: 1;
@@ -258,8 +271,8 @@ body {
     }
 
     #img_div {
-        margin-top: 18px;
-        margin-left: 15px;
+        margin-top: 16px;
+        margin-left: 10px;
     }
 
     /* ============ Nav-Items section ================== */
@@ -272,14 +285,14 @@ body {
 
     .select-andhra h3 {
         border: 1.2px solid;
-        margin-top: 100px;
+        margin-top: 130px;
         color: orange;
         width: 240px;
         border-radius: 5px;
     }
 
     .row-andhra {
-        margin-top: 100px;
+        margin-top: 130px;
         margin-left: 130px;
         display: flex;
         gap: 30px;
@@ -290,29 +303,33 @@ body {
         color: aqua;
     }
 
-    #a-select,
-    #b-select,
-    #h-select {
+    #a-restaurant-select,#a-dish-select,
+    #b-restaurant-select,#b-dish-select,
+    #h-restaurant-select,#h-dish-select {
         width: 160px;
         height: 35px;
     }
 
     .city-row {
-        /* border:solid; */
-        margin: 100px 0px 0px;
+        margin-top: 130px;
+        margin-left: 130px;
         display: flex;
-        align-items: center;
+        gap: 30px;
     }
 
     .city-row h3 {
         border: 0.5px solid;
         color: orange;
         border-radius: 5px;
+        margin-left: -130px;
     }
 
-    .row-hyd, .row-bang {
+    .row-hyd,
+    .row-bang {
         display: flex;
-        margin-left: 212px;
+    }
+    .row-hyd{
+        padding-left: 180px;
     }
 
     /* ========== Grid - Cards =========== */
@@ -339,6 +356,7 @@ body {
         color: rgb(64, 68, 54);
         padding: 10px 15px;
     }
+
     /* ======== Grid-rating button ======= */
 
     .btns {
@@ -354,11 +372,11 @@ body {
         border-radius: 8px;
         height: 35px;
         width: 100px;
-        background-color:palevioletred;
+        background-color: palevioletred;
     }
 
     .btns a {
-        color:white;
+        color: white;
         text-decoration: none;
     }
 
@@ -396,30 +414,33 @@ body {
         transition: transform 3s;
         transform: scale(1.5)
     }
-    
+
     .carousel-inner img:hover {
         transform: scale(1.1) translate(-50px, -50px);
-    
+
     }
-    
+
     #carouselExample img {
         height: 500px;
     }
-    
+
     #carouselExample {
         width: 90%;
         margin: auto;
         transition: transform 2s;
-        transform: translate(-50px,100px);
+        transform: translate(-50px, 100px);
     }
-    #carouselExample:hover{
-        transform: translate(0px,0px);
-        .top-carousel{
+
+    #carouselExample:hover {
+        transform: translate(0px, 0px);
+
+        .top-carousel {
             height: 300px;
-    
+
         }
     }
-    .top-carousel{
+
+    .top-carousel {
         width: 100%;
         height: 600px;
         /* background: #bbff00; */
@@ -428,30 +449,33 @@ body {
         background-size: cover;
     }
 
-/* ======== Hyderabad-carousel and Bengaluru-carousel ====== */
-    .bg-Hyderabad-carousel{
+    /* ======== Hyderabad-carousel and Bengaluru-carousel ====== */
+    .bg-Hyderabad-carousel {
         width: 100%;
-        height: 600px;
+        height: 400px;
         margin-top: 60px;
-        /* background: #bbff00; */
         background-image: url("./कुछ\ ग़लत\ हो\ सकता\ है.jpg");
         background-position: center;
         background-size: cover;
     }
+
     #Hyderabad-carousel {
         width: 91%;
         margin: auto;
         transition: transform 2s;
-        transform: translate(50px,100px);
-    }
-    #Hyderabad-carousel:hover{
-        transform: translate(0px,0px);
-    }
-    #Hyderabad-carousel img {
-        height: 500px;
+        transform: translate(35px, 100px);
     }
 
-    .bg-Bengaluru-carousel{
+    #Hyderabad-carousel:hover {
+        transform: translate(0px, 0px);
+    }
+
+    #Hyderabad-carousel img {
+        height: 300px;
+        border-radius: 20px;
+    }
+
+    .bg-Bengaluru-carousel {
         width: 100%;
         height: 600px;
         margin-top: 60px;
@@ -460,15 +484,18 @@ body {
         background-position: center;
         background-size: cover;
     }
+
     #Bengaluru-carousel {
         width: 91%;
         margin: auto;
         transition: transform 2s;
-        transform: translate(5px,100px);
+        transform: translate(5px, 100px);
     }
-    #Bengaluru-carousel:hover{
-        transform: translate(0px,0px);
+
+    #Bengaluru-carousel:hover {
+        transform: translate(0px, 0px);
     }
+
     #Bengaluru-carousel img {
         height: 500px;
     }
@@ -482,13 +509,13 @@ body {
     }
 
     .nav>div:nth-child(1):hover {
-        transform: translate(300px, 250px) scale(4) rotate(720deg);
+        transform: translate(450px, 50px) scale(2) rotate(720deg);
     }
 
     /* lOGO animation section */
     @keyframes slide {
         100% {
-            transform: translate(300px, 250px) scale(5) rotate(720deg);
+            transform: translate(450px, 50px) scale(2) rotate(720deg);
 
         }
     }
@@ -515,19 +542,19 @@ body {
         margin-bottom: 45px;
         /* margin-top: 0px; */
     }
+
     .logo img {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         border-radius: 8px;
         position: absolute;
         z-index: 1;
-        border: 1.1px solid;
     }
 
     #img_div {
         /* width: 50px; */
-        margin-top: 18px;
-        margin-left: 15px;
+        margin-top: 16px;
+        margin-left: 10px;
     }
 
     /* ============ Nav-Items section ================== */
@@ -561,6 +588,7 @@ body {
         display: flex;
 
     }
+
     .login-container input {
         padding: 10px 10px 10px 10px;
     }
@@ -589,24 +617,23 @@ body {
 
     .select-andhra {
         /* border: solid; */
-       margin-top: 80px;
+        margin-top: 130px;
         display: flex;
         align-items: center;
-        /* justify-content: space-between; */
+        justify-content: space-between;
     }
 
     .select-andhra h3 {
         border: 0.5px solid;
         color: orange;
         width: 220px;
+        border-radius: 5px;
 
     }
 
     .row-andhra {
-        /* border: 0.5px solid; */
         display: flex;
-        margin-left: 210px;
-        gap: 40px;
+        padding: 10px 20px;
     }
 
     .a-col-1 {
@@ -614,33 +641,31 @@ body {
         color: aqua;
     }
 
-    #a-select,
-    #b-select,
-    #h-select {
-        width: 160px;
-        height: 35px;
+    #a-restaurant-select,#a-dish-select,
+    #b-restaurant-select,#b-dish-select,
+    #h-restaurant-select,#h-dish-select {
+        width: 170px;
+        height: 30px;
+        /* border: solid; */
     }
 
+   
     .city-row {
-        /* border:solid; */
-        margin: 80px 120px -40px;
+        margin-top: 100px;
+        margin-bottom: -40px;
         display: flex;
-        align-items: center;
+        gap: 30px;
     }
 
     .city-row h3 {
         border: 0.5px solid;
         color: orange;
-        /* width: 220px; */
+        border-radius: 5px;
     }
 
     .row-hyd,
     .row-bang {
-        /* border: solid; */
         display: flex;
-        margin-left: 120px;
-        gap: 10px;
-
     }
 
 
@@ -669,24 +694,24 @@ body {
         color: rgb(64, 68, 54);
         padding: 20px 15px;
     }
-
     .btns {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        /* border: solid; */
     }
 
     .btns button {
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 3px;
-        height: 30px;
+        border-radius: 8px;
+        height: 35px;
+        width: 90px;
+        background-color: palevioletred;
     }
 
     .btns a {
-        /* margin-left: 10px; */
+        color: white;
         text-decoration: none;
     }
 
@@ -717,9 +742,94 @@ body {
 /* ========    MEDIA QUERY FOR LARGE :TABLET FULL-screen  ========= */
 @media (min-width: 426px) and (max-width:768px) {
 
-    #carouselExample img {
-        height: 400px;
+    .carousel-inner img {
+        transition: transform 3s;
+        transform: scale(1.5)
     }
+
+    .carousel-inner img:hover {
+        transform: scale(1.1) translate(-50px, -50px);
+
+    }
+
+    #carouselExample img {
+        height: 500px;
+    }
+
+    #carouselExample {
+        width: 90%;
+        margin: auto;
+        transition: transform 2s;
+        transform: translate(-50px, 100px);
+    }
+
+    #carouselExample:hover {
+        transform: translate(0px, 0px);
+
+        .top-carousel {
+            height: 300px;
+
+        }
+    }
+
+    .top-carousel {
+        width: 100%;
+        height: 600px;
+        /* background: #bbff00; */
+        background-image: url("./कुछ\ ग़लत\ हो\ सकता\ है.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    /* ======== Hyderabad-carousel and Bengaluru-carousel ====== */
+    .bg-Hyderabad-carousel {
+        width: 100%;
+        height: 350px;
+        background-image: url("./कुछ\ ग़लत\ हो\ सकता\ है.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    #Hyderabad-carousel {
+        width: 81%;
+        margin: auto;
+        transition: transform 2s;
+        transform: translate(60px, 50px) scale(1);
+    }
+
+    #Hyderabad-carousel:hover {
+        transform: translate(0px, 0px) scale(1);
+    }
+
+    #Hyderabad-carousel img {
+        height: 300px;
+    }
+
+    .bg-Bengaluru-carousel {
+        width: 100%;
+        height: 600px;
+        margin-top: 60px;
+        /* background: #bbff00; */
+        background-image: url("./कुछ\ ग़लत\ हो\ सकता\ है.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    #Bengaluru-carousel {
+        width: 91%;
+        margin: auto;
+        transition: transform 2s;
+        transform: translate(5px, 100px);
+    }
+
+    #Bengaluru-carousel:hover {
+        transform: translate(0px, 0px);
+    }
+
+    #Bengaluru-carousel img {
+        height: 500px;
+    }
+
 
     /* ========== LOGO RESPONSIVE ========= */
     .nav>div:nth-child(1) {
@@ -729,20 +839,20 @@ body {
     }
 
     .nav>div:nth-child(1):hover {
-        transform: translate(150px, 150px) scale(2) rotate(720deg);
+        transform: translate(300px, 50px) scale(1) rotate(720deg);
     }
 
     /* lOGO animation section */
     @keyframes slide {
         100% {
-            transform: translate(150px, 150px) scale(2) rotate(720deg);
+            transform: translate(300px, 50px) scale(1) rotate(720deg);
 
         }
     }
 
     nav {
         width: 100%;
-        height: 20%;
+        height: 18%;
         display: flex;
         align-items: center;
         /* justify-content: center; */
@@ -762,18 +872,19 @@ body {
         margin-bottom: 45px;
         /* margin-top: 0px; */
     }
+
     .logo img {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         border-radius: 8px;
         position: absolute;
         z-index: 1;
-        border: 1.1px solid;
+        /* border: 1.1px solid; */
     }
 
     #img_div {
         margin-top: 18px;
-        margin-left: 15px;
+        margin-left: 10px;
     }
 
     /* ============ Nav-Items section ================== */
@@ -802,7 +913,7 @@ body {
 
     .select-andhra {
         /* border: solid; */
-        margin:80px 0px 0px;
+        margin: 80px 0px 0px;
         display: flex;
         align-items: center;
     }
@@ -817,10 +928,8 @@ body {
     }
 
     .row-andhra {
-        /* border: 0.5px solid; */
         display: flex;
         flex-direction: column;
-        margin-left: -20px;  
     }
 
     .a-col-1,
@@ -828,26 +937,26 @@ body {
         /* border: 0.5px solid; */
         display: flex;
         flex-direction: column;
-        margin-left: 120px;
+        margin-left: 40px;
+        padding-left: 40px;
 
     }
 
     .a-col-1 {
-        font-size: 1.3em;
+        font-size: 1.2em;
         color: aqua;
     }
 
-    #a-select,
-    #b-select,
-    #h-select {
-        width: 170px;
+    #a-restaurant-select,#a-dish-select,
+    #b-restaurant-select,#b-dish-select,
+    #h-restaurant-select,#h-dish-select {
+        width: 160px;
         height: 30px;
         border-radius: 5px;
     }
 
     .city-row {
-        border:solid;
-        margin: 80px 85px 0px;
+        margin: 100px 0px 0px;
         display: flex;
         align-items: center;
     }
@@ -855,7 +964,8 @@ body {
     .city-row h3 {
         border: 0.5px solid;
         color: orange;
-        width: 150px;
+        border-radius: 5px;
+        margin-top: 22px;
     }
 
     .row-hyd,
@@ -863,7 +973,7 @@ body {
         /* border: 0.5px solid; */
         display: flex;
         flex-direction: column;
-        margin-left: 120px;
+        margin-left: 0px;
 
     }
 
@@ -877,7 +987,6 @@ body {
 
     .cards {
         margin: auto;
-
     }
 
     .main-grid .cards .card-img {
@@ -887,7 +996,7 @@ body {
 
     .main-grid .cards .card-body {
         width: 250px;
-        height: 350px;
+        height: 300px;
         background: #f5f2f0;
         color: rgb(64, 68, 54);
         padding: 20px 15px;
@@ -897,19 +1006,20 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        /* border: solid; */
     }
 
     .btns button {
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 3px;
-        height: 30px;
+        border-radius: 8px;
+        height: 35px;
+        width: 80px;
+        background-color: palevioletred;
     }
 
     .btns a {
-        /* margin-left: 10px; */
+        color: white;
         text-decoration: none;
     }
 
@@ -938,14 +1048,93 @@ body {
 
 /* ========    MEDIA QUERY FOR LARGE :MOBILE FULL-screen  ========= */
 @media (min-width:10px) and (max-width:425px) {
+    .carousel-inner img {
+        transition: transform 3s;
+        transform: scale(1.5);
+    }
+
+    .carousel-inner img:hover {
+        transform: scale(1.1) translate(-50px, -50px);
+
+    }
+
     #carouselExample img {
-        height: 250px;
-        width: 100%;
+        height: 200px;
     }
 
     #carouselExample {
-        width: 100%;
+        width: 90%;
         margin: auto;
+        transition: transform 2s;
+        transform: translate(0px, 0px);
+    }
+
+    #carouselExample:hover {
+        transform: translate(0px, 0px);
+
+        .top-carousel {
+            height: 200px;
+
+        }
+    }
+
+    .top-carousel {
+        width: 100%;
+        height: 230px;
+        /* background: #bbff00; */
+        background-image: url("./कुछ\ ग़लत\ हो\ सकता\ है.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    /* ======== Hyderabad-carousel and Bengaluru-carousel ====== */
+    .bg-Hyderabad-carousel {
+        width: 100%;
+        height: 250px;
+        /* background: #bbff00; */
+        background-image: url("./कुछ\ ग़लत\ हो\ सकता\ है.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    #Hyderabad-carousel {
+        width: 91%;
+        margin: auto;
+        transition: transform 2s;
+        transform: translate(10px, 50px) scale(1);
+    }
+
+    #Hyderabad-carousel:hover {
+        transform: translate(0px, 0px) scale(1);
+    }
+
+    #Hyderabad-carousel img {
+        height: 200px;
+    }
+
+    .bg-Bengaluru-carousel {
+        width: 100%;
+        height: 280px;
+        margin-top: 10px;
+        /* background: #bbff00; */
+        background-image: url("./कुछ\ ग़लत\ हो\ सकता\ है.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    #Bengaluru-carousel {
+        width: 90%;
+        margin: auto;
+        transition: transform 2s;
+        transform: translate(5px, 50px);
+    }
+
+    #Bengaluru-carousel:hover {
+        transform: translate(0px, 0px);
+    }
+
+    #Bengaluru-carousel img {
+        height: 230px;
     }
 
     /* ========== LOGO RESPONSIVE ========= */
@@ -987,8 +1176,8 @@ body {
     }
 
     .logo img {
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
         border-radius: 8px;
         position: absolute;
         z-index: 1;
@@ -999,27 +1188,28 @@ body {
         margin-top: 10px;
         margin-left: 5px;
     }
+
     /* ============ Nav-Items section ================== */
-    .nav-select{
-        margin-bottom: 90px;
-        margin-left: 200px;
+    .nav-select {
+        margin-left: 230px;
         flex-direction: column;
-        /* align-items: center; */
-        color: yellow;
     }
-    .nav-select>button{
+
+    .nav-select>button {
         width: 80px;
         height: 20px;
         border-radius: 8px;
         font-size: 10px;
     }
-    .nav-select>button>a{
+
+    .nav-select>button>a {
         text-decoration: none;
     }
-    .nav-select>h3{
-        font-size: 15px;
+
+    .nav-select>h3 {
+        font-size: 13px;
     }
-    
+
 
     .select-andhra {
         /* border: solid; */
@@ -1032,11 +1222,11 @@ body {
     }
 
     .select-andhra h3 {
-        margin-right: 139px;
+        margin-right: 40px;
         font-size: 1.1em;
         border: 0.5px solid;
         color: orange;
-        width: 153px;
+        border-radius: 5px;
 
     }
 
@@ -1065,11 +1255,11 @@ body {
         color: aqua;
     }
 
-    #a-select,
+    #a-restaurant-select,#a-dish-select,
     #b-select,
     #h-select {
-        width: 150px;
-        height: 28px;
+        width: 160px;
+        height: 30px;
         border-radius: 5px;
     }
 
@@ -1083,17 +1273,16 @@ body {
     .city-row h3 {
         border: 0.5px solid;
         color: orange;
-        width: 150px;
-        margin-right: 155px;
+        margin-right: 30px;
+        border-radius: 5px;
     }
 
-    .row-hyd,
-    .row-bang {
-        margin-right: 135px;
-        width: 170px;
+    #a-restaurant-select, #a-dish-select,
+    #b-restaurant-select, #b-dish-select,
+    #h-restaurant-select, #h-dish-select{
+        width: 145px;
+        height: 30px;
     }
-
-
 
     /* ===== Grid ITEMS animation ====== */
     .main-grid {
@@ -1119,6 +1308,26 @@ body {
         /* row-gap: 100px; */
     }
 
+    .rate button {
+        display: flex;
+        width: 59px;
+        border-radius: 5px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        float: right;
+    }
+    .rate b {
+        color: white;
+        font-size: 12px;
+    }
+    
+    .rate svg {
+        width: 15px;
+        height: 15px;
+        margin: 1px;
+        padding-left: 2px;
+    }
+
     .btns {
         display: flex;
         align-items: center;
@@ -1131,7 +1340,7 @@ body {
         justify-content: center;
         align-items: center;
         border-radius: 3px;
-        height: 30px;
+        height: 20px;
     }
 
     .btns a {
@@ -1149,18 +1358,11 @@ body {
     }
 
     .footer>div {
-        /* font-size: 11px;
-        width: 100%;
-        height: 100%;
-        background: rgba(202, 65, 65, 0.911);
-        padding: 30px;
-        display: flex;
-        flex-direction: column;
-        row-gap: 10px; */
 
         width: 100%;
         height: auto;
-        background-color: rgba(202, 65, 65, 0.911);
+        background-color: black;
+        color: white;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         padding: 30px;
@@ -1175,10 +1377,22 @@ body {
 
 
 
-/* #img_div {
-    margin-top: 25px;
-    margin-left: 35px;
-} */
+
+.footer>div {
+
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 30px;
+    margin-left: 0px;
+}
+
+.copy-right {
+    font-size: 13px;
+}
 
 #img_div>div {
     width: 20px;

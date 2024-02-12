@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 body {
@@ -28,7 +28,7 @@ nav {
     margin-top: 50px;
 }
 
-.nav-select{
+.nav-select {
     margin: auto;
     display: flex;
     width: 600px;
@@ -36,19 +36,28 @@ nav {
     justify-content: space-between;
     color: yellow;
 }
-.nav-select>button{
+
+.nav-select>button {
     width: 150px;
     height: 40px;
     border-radius: 8px;
     font-size: 1.1em;
 }
-.nav-select>button>a{
+
+.nav-select>button>a {
     text-decoration: none;
 }
-.nav-select>h3{
+
+.nav-select>button>a:hover {
+    text-decoration: underline red;
+    /* background: #bbff00; */
+}
+
+.nav-select>h3 {
     font-size: 1.5rem;
 }
-.select{
+
+.select {
     margin: auto;
     /* border: solid; */
     width: 700px;
@@ -57,8 +66,9 @@ nav {
     align-items: center;
     justify-content: space-between;
 }
-.select>button{
-    font-size: 1.1em;
+
+.select>button {
+    font-size: 1.2em;
     border-radius: 5px;
     width: 150px;
     height: 40px;
@@ -85,32 +95,32 @@ nav {
     border-bottom-left-radius: 250px;
     color: blue;
 }
-.box p{
+
+.box p {
     font-size: 1.4em;
     margin-right: 50px;
     padding: 70px;
     background: grey;
     border-top-right-radius: 250px;
 }
-.box>button{
+
+.box>button {
     position: relative;
     left: 30%;
     font-size: 2em;
     border-radius: 5px;
     background: green;
-    color:wheat;
+    color: wheat;
     margin-top: 10px;
     width: 300px;
     height: 70px;
 }
-.box h3{
+
+.box h3 {
     color: orangered;
 }
 
-
-
-
-/* ========== LOGO RESPONSIVE ========= */
+/* ========    MEDIA QUERY FOR LARGE :-moz-full-screen  ========= */
 @media (min-width: 1025px) {
     .nav>div:nth-child(1) {
         transition: transform 2s, rotate;
@@ -119,13 +129,13 @@ nav {
     }
 
     .nav>div:nth-child(1):hover {
-        transform: translate(600px, 100px) scale(2) rotate(720deg);
+        transform: translate(650px, 100px) scale(1) rotate(720deg);
     }
 
     /* lOGO animation section */
     @keyframes slide {
         100% {
-            transform: translate(600px, 100px) scale(2) rotate(720deg);
+            transform: translate(650px, 100px) scale(1) rotate(720deg);
 
         }
     }
@@ -148,13 +158,12 @@ nav {
         z-index: 1;
         position: relative;
         margin: 5px;
-        margin-bottom: 45px;
-        /* margin-top: 0px; */
+        margin-bottom: 30px;
     }
 
     .logo img {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         border-radius: 8px;
         position: absolute;
         z-index: 1;
@@ -162,9 +171,8 @@ nav {
     }
 
     #img_div {
-        width: 50px;
-        margin-top: 15px;
-        margin-left: 25px;
+        margin-top: 20px;
+        margin-left: 10px;
     }
 
     /* ============ Nav-Items section ================== */
@@ -204,8 +212,8 @@ nav {
 
     .login-container input {
         width: 25%;
-        height: 12px;
-        border-radius: 10px;
+        height: 35px;
+        border-radius: 5px;
         padding-left: 15px;
     }
 
@@ -223,7 +231,31 @@ nav {
     .login-container .button:hover {
         background: #ccc;
     }
+
+    .footer {
+        font-size: 20px;
+        width: 100%;
+        height: auto;
+        background: rgba(202, 65, 65, 0.911);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px;
+    }
+
+    .copy-right {
+        font-size: 18px;
+    }
 }
+
+
+/* ========    MEDIA QUERY FOR LARGE :LAPTOP FULL-screen  ========= */
+@media (min-width: 769px) and (max-width:1024px) {}
+
+/* ========    MEDIA QUERY FOR LARGE :TABLET FULL-screen  ========= */
+@media (min-width: 426px) and (max-width:768px) {}
+
+/* ========    MEDIA QUERY FOR LARGE :MOBILE FULL-screen  ========= */
+@media (min-width:10px) and (max-width:425px) {}
 
 #img_div>div {
     width: 20px;
@@ -279,4 +311,25 @@ nav {
 
 #img_div>div:nth-child(6) {
     transform: translate(-130px, -80px);
+}
+
+/* ========== foooter block ======== */
+.footer>div {
+
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 30px;
+    margin-left: 0px;
+}
+
+.contact>div p strong {
+    font-size: 20px;
+}
+
+.copy-right {
+    font-size: 13px;
 }
