@@ -19,7 +19,7 @@ nav {
     height: 15%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background: gray;
     position: fixed;
     z-index: 1;
@@ -31,10 +31,13 @@ nav {
 .nav-select {
     margin: auto;
     display: flex;
-    width: 600px;
+    width: 700px;
     align-items: center;
     justify-content: space-between;
     color: yellow;
+}
+.nav-select>h3 {
+    font-size: 1.5rem;
 }
 
 .nav-select>button {
@@ -46,15 +49,12 @@ nav {
 
 .nav-select>button>a {
     text-decoration: none;
+    color: black;
 }
 
 .nav-select>button>a:hover {
-    text-decoration: underline red;
-    /* background: #bbff00; */
-}
-
-.nav-select>h3 {
-    font-size: 1.5rem;
+    text-decoration: 4px underline greenyellow;
+    color: blue;
 }
 
 .select {
@@ -71,7 +71,7 @@ nav {
     font-size: 1.2em;
     border-radius: 5px;
     width: 150px;
-    height: 40px;
+    height: 35px;
 }
 
 
@@ -88,6 +88,7 @@ nav {
 }
 
 .box h2 {
+    font-size: 1.4em;
     border-top-right-radius: 25px;
     margin-left: 50px;
     padding: 70px;
@@ -107,13 +108,13 @@ nav {
 .box>button {
     position: relative;
     left: 30%;
-    font-size: 2em;
+    font-size: 1.5em;
     border-radius: 5px;
     background: green;
     color: wheat;
     margin-top: 10px;
-    width: 300px;
-    height: 70px;
+    width: 250px;
+    height: 50px;
 }
 
 .box h3 {
@@ -142,7 +143,7 @@ nav {
 
     nav {
         width: 100%;
-        height: 11%;
+        height: 12%;
         margin-top: 0px;
         display: flex;
         align-items: center;
@@ -177,29 +178,6 @@ nav {
 
     /* ============ Nav-Items section ================== */
 
-    .nav-row {
-        border-radius: 5px;
-        display: flex;
-        background: #bbff00;
-    }
-
-    .nav-row>div {
-        padding: 5px 5px 5px 5px;
-    }
-
-    .nav-col-1 label {
-        font-size: 1.5em;
-    }
-
-    /* .nav-col-2{
-        background: red;
-    } */
-    #Area {
-        height: 35px;
-        width: 160px;
-        /* border-radius: 10px; */
-    }
-
     .login-container {
         /* border: solid; */
         display: flex;
@@ -221,7 +199,6 @@ nav {
         background: white;
         width: 16%;
         height: 33px;
-        /* margin-bottom: 10px; */
         padding-bottom: 0px;
         padding-top: 0px;
         border: none;
@@ -230,6 +207,19 @@ nav {
 
     .login-container .button:hover {
         background: #ccc;
+    }
+
+    .box>button{
+        margin-top: 40px;
+    }
+    .box>button {
+        margin: 20px;
+    }
+    .box h2 {
+        border-top-right-radius: 0px;
+    }
+    .box h3{
+        font-size: 20px;
     }
 
     .footer {
@@ -247,15 +237,390 @@ nav {
     }
 }
 
-
 /* ========    MEDIA QUERY FOR LARGE :LAPTOP FULL-screen  ========= */
-@media (min-width: 769px) and (max-width:1024px) {}
+@media (min-width: 769px) and (max-width:1024px) {
+    .nav>div:nth-child(1) {
+        transition: transform 2s, rotate;
+        animation: slide 2s 2;
+        z-index: 2;
+    }
+
+    .nav>div:nth-child(1):hover {
+        transform: translate(500px, 100px) scale(1) rotate(720deg);
+    }
+
+    /* lOGO animation section */
+    @keyframes slide {
+        100% {
+            transform: translate(500px, 100px) scale(1) rotate(720deg);
+
+        }
+    }
+
+    nav {
+        width: 100%;
+        height: 12%;
+        margin-top: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: gray;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        float: left;
+    }
+
+    .logo {
+        z-index: 1;
+        position: absolute;
+        margin: 5px;
+        margin-bottom: 40px;
+    }
+
+    .logo img {
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+        position: absolute;
+        z-index: 1;
+
+    }
+
+    #img_div {
+        position: absolute;
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+
+    /* ============ Nav-Items section ================== */
+    .nav-select {
+        margin: auto;
+        display: flex;
+        width: 700px;
+        align-items: center;
+        justify-content: space-between;
+        color: yellow;
+    }
+
+    .nav-select>button {
+        width: 150px;
+        height: 35px;
+        border-radius: 8px;
+        font-size: 1.1em;
+    }
+
+    .nav-select>button>a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .nav-select>button>a:hover {
+        text-decoration: 4px underline greenyellow;
+        color: blue;
+    }
+
+    .nav-select>h3 {
+        font-size: 1.5rem;
+    }
+
+    .login-container {
+        display: none;
+
+    }
+
+    .box>button{
+        margin-top: 40px;
+    }
+    .box>button {
+        margin: 20px;
+    }
+    .box h2 {
+        border-top-right-radius: 0px;
+    }
+    .box h3{
+        font-size: 20px;
+    }
+
+    .footer {
+        font-size: 20px;
+        width: 100%;
+        height: auto;
+        background: rgba(202, 65, 65, 0.911);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px;
+    }
+
+    .copy-right {
+        font-size: 18px;
+    }
+}
 
 /* ========    MEDIA QUERY FOR LARGE :TABLET FULL-screen  ========= */
-@media (min-width: 426px) and (max-width:768px) {}
+@media (min-width: 426px) and (max-width:768px) {
+    .nav>div:nth-child(1) {
+        transition: transform 2s, rotate;
+        animation: slide 2s 2;
+        z-index: 2;
+    }
+
+    .nav>div:nth-child(1):hover {
+        transform: translate(350px, 50px) scale(1) rotate(720deg);
+    }
+
+    /* lOGO animation section */
+    @keyframes slide {
+        100% {
+            transform: translate(350px, 50px) scale(1) rotate(720deg);
+
+        }
+    }
+
+    nav {
+        width: 100%;
+        height: 12%;
+        margin-top: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: gray;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        float: left;
+    }
+
+    .logo {
+        z-index: 1;
+        position: absolute;
+        margin: 5px;
+        margin-bottom: 40px;
+    }
+
+    .logo img {
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+        position: absolute;
+        z-index: 1;
+
+    }
+
+    #img_div {
+        position: absolute;
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+
+    /* ============ Nav-Items section ================== */
+
+    .nav-select>button {
+        width: 150px;
+        height: 35px;
+        border-radius: 8px;
+        font-size: 1.01em;
+    }
+
+    .login-container {
+        display: none;
+
+    }
+
+    .box {
+        width: 700px;
+        height: 600px;
+        font-size: 13px;
+    }
+    .box>button{
+        margin-top: 40px;
+    }
+    .box>button {
+        margin: 20px;
+    }
+    .box h2 {
+        border-top-right-radius: 0px;
+    }
+    .box h3{
+        font-size: 20px;
+    }
+    .select {
+        width: 600px;
+        margin-top: 50px;
+    }
+    
+    .select>button {
+        width: 120px;
+        height: 32px;
+    }
+
+    .footer {
+        font-size: 15px;
+        width: 100%;
+        height: auto;
+        background: rgba(202, 65, 65, 0.911);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px;
+    }
+
+    .copy-right {
+        font-size: 18px;
+    }
+
+}
 
 /* ========    MEDIA QUERY FOR LARGE :MOBILE FULL-screen  ========= */
-@media (min-width:10px) and (max-width:425px) {}
+@media (min-width:10px) and (max-width:425px) {
+    .nav>div:nth-child(1) {
+        transition: transform 2s, rotate;
+        animation: slide 2s 2;
+        z-index: 2;
+    }
+
+    .nav>div:nth-child(1):hover {
+        transform: translate(150px, 50px) scale(1) rotate(720deg);
+    }
+
+    /* lOGO animation section */
+    @keyframes slide {
+        100% {
+            transform: translate(150px, 50px) scale(1) rotate(720deg);
+
+        }
+    }
+
+    nav {
+        width: 100%;
+        height: 10%;
+        margin-top: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: gray;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        float: left;
+    }
+
+    .logo {
+        z-index: 1;
+        position: absolute;
+        margin: 5px;
+        margin-bottom: 40px;
+    }
+
+    .logo img {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        z-index: 1;
+
+    }
+
+    #img_div {
+        position: absolute;
+        margin-top: 2px;
+        margin-left: 0px;
+    }
+
+    /* ============ Nav-Items section ================== */
+
+    .nav-select {
+        /* margin: auto; */
+        display: flex;
+        width: 100%;
+        
+    }
+    .nav-select>h3 {
+        font-size: 13px;
+        color: yellow;
+    }
+    
+    .nav-select>button {
+        margin-right: 10px;
+        width: 70px;
+        height: 25px;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+    .login-container {
+        display: none;
+    }
+    
+    .box {
+        width: 100%;
+        height: 500px;
+        font-size: 13px;
+    }
+    .box {
+        width: 100%;
+        height: 400px;
+        margin: auto;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        /* text-align: center; */
+    }
+    
+    .box h2 {
+        font-size: 1.3em;
+        padding: 30px 20px;
+        background: lightskyblue;
+        border-bottom-left-radius: 80px;
+        border-top-right-radius: 0px;
+        color: blue;
+    }
+    
+    .box p {
+        font-size: 1.3em;
+        /* margin-right: 50px; */
+        padding: 30px;
+        background: grey;
+    }
+    
+    .box>button {
+        font-size: 1.3em;
+        border-radius: 5px;
+        background: green;
+        color: wheat;
+        margin: 10px -10px;
+        width: 170px;
+        height: 35px;
+    }
+    
+    .box h3 {
+        color: orangered;
+        font-size: 12px;
+    }    
+
+    .select {
+        width:100%;
+    }
+    
+    .select>button {
+        width: 70px;
+        height: 23px;
+        margin-right: 10px;
+    }
+    .select>button>a{
+        font-size: 12px;
+    }
+
+    .footer {
+        font-size: 13px;
+        width: 100%;
+        height: auto;
+        background: rgba(202, 65, 65, 0.911);
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 30px;
+    }
+
+    .copy-right {
+        font-size: 18px;
+    }
+}
 
 #img_div>div {
     width: 20px;
@@ -269,7 +634,7 @@ nav {
 
 @keyframes rot {
     50% {
-        /* transform: rotate(760deg); */
+        transform: rotate(760deg);
         background-color: red;
     }
 
@@ -284,7 +649,7 @@ nav {
     }
 
     100% {
-        transform: rotate(360deg);
+        /* transform: rotate(360deg); */
         background-color: hsl(320, 100%, 59%);
     }
 }
