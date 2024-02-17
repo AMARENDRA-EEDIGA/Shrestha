@@ -28,6 +28,64 @@ body {
     float: left;
 }
 
+.nav>div:nth-child(1) {
+    transition: transform 2s, rotate;
+    animation: slide 2s infinite;
+    z-index: 2;
+}
+
+.nav>div:nth-child(1):hover {
+    transform: translate(650px, 100px) scale(1) rotate(720deg);
+}
+@keyframes slide {
+    100% {
+        transform: translate(1500px, 100px) scale(1) rotate(720deg);
+
+    }
+}
+
+.nav-select {
+    margin: auto;
+    display: flex;
+    width: 500px;
+    align-items: center;
+    justify-content: space-around;
+    color: yellow;
+}
+
+.nav-select>button {
+    width: 130px;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 1.1em;
+}
+
+.nav-select>button>a {
+    text-decoration: none;
+}
+
+
+.nav-select>h3 {
+    font-size: 1.5rem;
+}
+
+.select {
+    margin: auto;
+    width: 700px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.select>button {
+    font-size: 1.1em;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+}
+
+/* ========== Grid Block ======= */
 .main-grid {
     gap: 60px;
     margin: 50px;
@@ -82,48 +140,6 @@ body {
     margin-top: 4px;
 }
 
-
-.nav-select {
-    margin: auto;
-    display: flex;
-    width: 500px;
-    align-items: center;
-    justify-content: space-around;
-    color: yellow;
-}
-
-.nav-select>button {
-    width: 130px;
-    height: 40px;
-    border-radius: 8px;
-    font-size: 1.1em;
-}
-
-.nav-select>button>a {
-    text-decoration: none;
-}
-
-
-.nav-select>h3 {
-    font-size: 1.5rem;
-}
-
-.select {
-    margin: auto;
-    /* border: solid; */
-    width: 700px;
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.select>button {
-    font-size: 1.1em;
-    border-radius: 5px;
-    width: 150px;
-    height: 40px;
-}
 .contact p{
     margin-top: 30px;
 }
@@ -167,18 +183,18 @@ body {
     /* ======= LoGo block of code ======== */
     .nav>div:nth-child(1) {
         transition: transform 2s, rotate;
-        animation: slide 2s 2;
+        animation: slide 4s 2;
         z-index: 2;
     }
 
     .nav>div:nth-child(1):hover {
-        transform: translate(600px, 100px) scale(2) rotate(720deg);
+        transform: translate(600px, 100px) scale(1) rotate(720deg);
     }
 
     /* lOGO animation section */
     @keyframes slide {
         100% {
-            transform: translate(600px, 100px) scale(2) rotate(720deg);
+            transform: translate(1500px, 50px) scale(1) rotate(720deg);
 
         }
     }
@@ -395,13 +411,13 @@ body {
     }
 
     .nav>div:nth-child(1):hover {
-        transform: translate(450px, 50px) scale(2) rotate(720deg);
+        transform: translate(450px, 50px) scale(1) rotate(720deg);
     }
 
     /* lOGO animation section */
     @keyframes slide {
         100% {
-            transform: translate(450px, 50px) scale(2) rotate(720deg);
+            transform: translate(450px, 50px) scale(1) rotate(720deg);
 
         }
     }
@@ -824,8 +840,8 @@ body {
 
     /* ========== LOGO RESPONSIVE ========= */
     .nav>div:nth-child(1) {
-        transition: transform 2s;
-        animation: slide 3s 1;
+        transition: transform 2s,rotate;
+        animation: slide 2s infinite;
         z-index: 2;
     }
 
