@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url("./line-bgimg.jpg");
+    /* background-image: url("./line-bgimg.jpg"); */
     background-position: center;
     background-size: cover;
     margin: 0;
@@ -20,7 +20,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: gray;
+    background: orange;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -34,7 +34,7 @@ nav {
     width: 700px;
     align-items: center;
     justify-content: space-between;
-    color: yellow;
+    color: green;
 }
 .nav-select>h3 {
     font-size: 1.5rem;
@@ -46,6 +46,13 @@ nav {
     border-radius: 8px;
     font-size: 1.1em;
 }
+.nav-select>button:hover{
+    background: green;
+    transform: scale(0.9);
+    .button-text{
+        color: white;
+    }
+}
 
 .nav-select>button>a {
     text-decoration: none;
@@ -53,13 +60,11 @@ nav {
 }
 
 .nav-select>button>a:hover {
-    text-decoration: 4px underline greenyellow;
-    color: blue;
+    text-decoration: 2px underline greenyellow;
 }
 
 .select {
     margin: auto;
-    /* border: solid; */
     width: 700px;
     margin-top: 30px;
     display: flex;
@@ -73,16 +78,23 @@ nav {
     width: 150px;
     height: 35px;
 }
+.select>button:hover{
+    background: gray;
+    .bx_btn{
+        color: black;
+        font-weight:bolder;
+    }
+}
 
 
 .box {
     width: 800px;
     height: 600px;
-    box-shadow: 0px 0px 15px 20px;
+    box-shadow: 0px 0px 10px 10px;
     border-radius: 20px;
     background: white;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 140px;
     margin-bottom: 100px;
     /* text-align: center; */
 }
@@ -94,7 +106,7 @@ nav {
     padding: 70px;
     background: lightskyblue;
     border-bottom-left-radius: 250px;
-    color: blue;
+    color:blue;
 }
 
 .box p {
@@ -102,6 +114,7 @@ nav {
     margin-right: 50px;
     padding: 70px;
     background: grey;
+    color: white;
     border-top-right-radius: 250px;
 }
 
@@ -119,6 +132,9 @@ nav {
 
 .box h3 {
     color: orangered;
+}
+.contact p{
+    margin-top: 30px;
 }
 
 /* ========    MEDIA QUERY FOR LARGE :-moz-full-screen  ========= */
@@ -148,7 +164,7 @@ nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background: gray;
+        background:orange;
         position: fixed;
         z-index: 1;
         top: 0;
@@ -198,7 +214,7 @@ nav {
     .login-container .button {
         background: white;
         width: 16%;
-        height: 33px;
+        height: 31px;
         padding-bottom: 0px;
         padding-top: 0px;
         border: none;
@@ -226,7 +242,7 @@ nav {
         font-size: 20px;
         width: 100%;
         height: auto;
-        background: rgba(202, 65, 65, 0.911);
+        background: orange;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         padding: 30px;
@@ -308,6 +324,11 @@ nav {
         height: 35px;
         border-radius: 8px;
         font-size: 1.1em;
+        transform: scale(1);
+    }
+    .nav-select>button:hover{
+        background: rebeccapurple;
+        transform: scale(0.6);
     }
 
     .nav-select>button>a {

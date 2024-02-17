@@ -1,17 +1,37 @@
 * {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 body {
-    background-image: url("./line-bgimg.jpg");
+    /* background-image: url("./line-bgimg.jpg"); */
     background-position: center;
     background-size: cover;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 
+}
+
+.nav {
+    width: 100%;
+    height: 15%;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: gray;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    float: left;
+}
+
+.main-grid {
+    gap: 60px;
+    margin: 50px;
+    box-shadow: -30px 24px 30px 0px green;
 }
 
 .cards {
@@ -38,37 +58,10 @@ body {
 
 
 .cards:hover {
-    box-shadow: 0px 0px 0px 0px red;
+    box-shadow: 15px 15px 15px 2px black;
     transform: scale(1.05);
 }
 
-*,
-::after,
-::before {
-    box-sizing: border-box;
-}
-
-
-/* awavesom-font bars-block( It works when the screen decreases(max-width:1050) */
-.checkbtn {
-    font-size: 30px;
-    color: white;
-    margin: auto;
-    line-height: 70px;
-    margin-right: -15px;
-    cursor: pointer;
-    display: none;
-}
-
-.checkbtn i {
-    float: right;
-    font-size: 40px;
-}
-
-#check {
-    display: none;
-    position: relative;
-}
 
 
 /* ======== Grid-rating button ======= */
@@ -89,20 +82,18 @@ body {
     margin-top: 4px;
 }
 
-.nav-select .home{
-    margin-left: 50px;
-}
+
 .nav-select {
     margin: auto;
     display: flex;
-    width: 600px;
+    width: 500px;
     align-items: center;
     justify-content: space-around;
     color: yellow;
 }
 
 .nav-select>button {
-    width: 150px;
+    width: 130px;
     height: 40px;
     border-radius: 8px;
     font-size: 1.1em;
@@ -111,6 +102,7 @@ body {
 .nav-select>button>a {
     text-decoration: none;
 }
+
 
 .nav-select>h3 {
     font-size: 1.5rem;
@@ -132,93 +124,44 @@ body {
     width: 150px;
     height: 40px;
 }
+.contact p{
+    margin-top: 30px;
+}
 
 /* ========    MEDIA QUERY FOR LARGE :-moz-full-screen  ========= */
 @media (min-width: 1025px) {
+
+    .carousel {
+        width: 100%;
+        height: 500px;
+        background-image: url("./कुछ\ ग़लत\ हो\ सकता\ है.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
     .carousel-inner img {
         transition: transform 3s;
         transform: scale(1.5)
     }
 
     .carousel-inner img:hover {
-        transform: scale(1.1) translate(-50px, -50px);
-
+        transform: scale(1.1) translate(90px, 20px);
     }
 
     #carouselExample img {
-        height: 500px;
+        height: 400px;
     }
 
     #carouselExample {
-        width: 90%;
-        margin: auto;
+        width: 80%;
+        height: 350px;
+        margin-top: 125px;
         transition: transform 2s;
-        transform: translate(-50px, 100px);
+        transform: translate(260px, 100px);
     }
 
     #carouselExample:hover {
         transform: translate(0px, 0px);
-
-        .top-carousel {
-            height: 300px;
-
-        }
-    }
-
-    .top-carousel {
-        width: 100%;
-        height: 600px;
-        background-image: url("./कुछ\ ग़लत\ हो\ सकता\ है.jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    /* ======== Hyderabad-carousel and Bengaluru-carousel ====== */
-    .bg-Hyderabad-carousel {
-        width: 100%;
-        height: 500px;
-        background-image: url("./कुछ\ ग़लत\ हो\ सकता\ है.jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #Hyderabad-carousel {
-        width: 91%;
-        margin: auto;
-        transition: transform 2s;
-        transform: translate(50px, 100px);
-    }
-
-    #Hyderabad-carousel:hover {
-        transform: translate(0px, 0px);
-    }
-
-    #Hyderabad-carousel img {
-        height: 400px;
-    }
-
-    .bg-Bengaluru-carousel {
-        width: 100%;
-        height: 600px;
-        /* background: #bbff00; */
-        background-image: url("./कुछ\ ग़लत\ हो\ सकता\ है.jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #Bengaluru-carousel {
-        width: 91%;
-        margin: auto;
-        transition: transform 2s;
-        transform: translate(5px, 100px);
-    }
-
-    #Bengaluru-carousel:hover {
-        transform: translate(0px, 0px);
-    }
-
-    #Bengaluru-carousel img {
-        height: 500px;
     }
 
     /* ======= LoGo block of code ======== */
@@ -243,7 +186,6 @@ body {
     nav {
         width: 100%;
         height: 15%;
-        margin-top: 0px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -253,6 +195,15 @@ body {
         top: 0;
         float: left;
     }
+
+    .nav-select button:hover {
+        background-color: green;
+        #home{
+            color: white;
+        }
+
+    }
+
 
     .logo {
         z-index: 1;
@@ -277,59 +228,48 @@ body {
 
     /* ============ Nav-Items section ================== */
 
-
-    .select-andhra {
-        display: flex;
-        align-items: center;
-    }
-
-    .select-andhra h3 {
-        border: 1.2px solid;
-        margin-top: 130px;
-        color: orange;
-        width: 240px;
-        border-radius: 5px;
-    }
-
-    .row-andhra {
-        margin-top: 130px;
-        margin-left: 130px;
-        display: flex;
-        gap: 30px;
-    }
-
     .a-col-1 {
         font-size: 1.4em;
-        color: aqua;
     }
 
-    #a-restaurant-select,#a-dish-select,
-    #b-restaurant-select,#b-dish-select,
-    #h-restaurant-select,#h-dish-select {
-        width: 160px;
+    #a-restaurant-select,
+    #a-dish-select,
+    #b-restaurant-select,
+    #b-dish-select,
+    #h-restaurant-select,
+    #h-dish-select {
+        width: 180px;
         height: 35px;
     }
 
-    .city-row {
-        margin-top: 130px;
-        margin-left: 130px;
+    .city-row,
+    .select-andhra {
+
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        margin-top: 165px;
+        margin-bottom: 40px;
         display: flex;
+        background-color: orange;
+        padding: 8px;
+        border-radius: 3px;
         gap: 30px;
+
     }
 
-    .city-row h3 {
+    .city-row h3,
+    .select-andhra h3 {
         border: 0.5px solid;
-        color: orange;
+        color: white;
         border-radius: 5px;
-        margin-left: -130px;
+        width: 320px;
     }
 
+    .row-andhra,
     .row-hyd,
     .row-bang {
         display: flex;
-    }
-    .row-hyd{
-        padding-left: 180px;
     }
 
     /* ========== Grid - Cards =========== */
@@ -338,6 +278,9 @@ body {
         grid-template-columns: repeat(3, 1fr);
         gap: 60px;
         margin: 50px;
+        margin-top: 60px;
+        box-shadow: -30px 24px 30px 0px green;
+
     }
 
     .cards {
@@ -372,7 +315,7 @@ body {
         border-radius: 8px;
         height: 35px;
         width: 100px;
-        background-color: palevioletred;
+        background-color: orange;
     }
 
     .btns a {
@@ -395,7 +338,7 @@ body {
         font-size: 20px;
         width: 100%;
         height: auto;
-        background: rgba(202, 65, 65, 0.911);
+        background: orange;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         padding: 30px;
@@ -409,6 +352,13 @@ body {
 
 /* ========    MEDIA QUERY FOR LARGE :LAPTOP FULL-screen  ========= */
 @media (min-width: 769px) and (max-width:1024px) {
+    .carousel {
+        width: 100%;
+        height: 450px;
+        background-image: url("./कुछ\ ग़लत\ हो\ सकता\ है.jpg");
+        background-position: center;
+        background-size: cover;
+    }
 
     .carousel-inner img {
         transition: transform 3s;
@@ -416,89 +366,25 @@ body {
     }
 
     .carousel-inner img:hover {
-        transform: scale(1.1) translate(-50px, -50px);
-
+        transform: scale(1.1) translate(90px, 20px);
     }
 
     #carouselExample img {
-        height: 500px;
+        height: 350px;
     }
 
     #carouselExample {
-        width: 90%;
-        margin: auto;
+        width: 80%;
+        height: 350px;
+        margin-top: 90px;
         transition: transform 2s;
-        transform: translate(-50px, 100px);
+        transform: translate(180px, 100px);
     }
 
     #carouselExample:hover {
         transform: translate(0px, 0px);
-
-        .top-carousel {
-            height: 300px;
-
-        }
     }
 
-    .top-carousel {
-        width: 100%;
-        height: 600px;
-        /* background: #bbff00; */
-        background-image: url("./कुछ\ ग़लत\ हो\ सकता\ है.jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    /* ======== Hyderabad-carousel and Bengaluru-carousel ====== */
-    .bg-Hyderabad-carousel {
-        width: 100%;
-        height: 400px;
-        margin-top: 60px;
-        background-image: url("./कुछ\ ग़लत\ हो\ सकता\ है.jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #Hyderabad-carousel {
-        width: 91%;
-        margin: auto;
-        transition: transform 2s;
-        transform: translate(35px, 100px);
-    }
-
-    #Hyderabad-carousel:hover {
-        transform: translate(0px, 0px);
-    }
-
-    #Hyderabad-carousel img {
-        height: 300px;
-        border-radius: 20px;
-    }
-
-    .bg-Bengaluru-carousel {
-        width: 100%;
-        height: 600px;
-        margin-top: 60px;
-        /* background: #bbff00; */
-        background-image: url("./कुछ\ ग़लत\ हो\ सकता\ है.jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #Bengaluru-carousel {
-        width: 91%;
-        margin: auto;
-        transition: transform 2s;
-        transform: translate(5px, 100px);
-    }
-
-    #Bengaluru-carousel:hover {
-        transform: translate(0px, 0px);
-    }
-
-    #Bengaluru-carousel img {
-        height: 500px;
-    }
 
     /* ========== LOGO RESPONSIVE ========= */
 
@@ -522,152 +408,90 @@ body {
 
     nav {
         width: 100%;
-        height: 20%;
         display: flex;
         align-items: center;
         justify-content: space-between;
         background: gray;
         position: fixed;
         z-index: 1;
-        top: 0;
+        /* top: 0; */
         float: left;
     }
 
+    .nav-select button{
+        z-index: 2;
+        background-color: green;
+        width: 100px;
+        height: 30px;
+    }
     .logo {
-        /* width: 100px;
-        height: 100px; */
         z-index: 1;
         position: relative;
         margin: 5px;
         margin-bottom: 45px;
-        /* margin-top: 0px; */
     }
 
     .logo img {
-        width: 40px;
-        height: 40px;
-        border-radius: 8px;
+        width: 30px;
+        height: 30px;
         position: absolute;
         z-index: 1;
     }
 
     #img_div {
-        /* width: 50px; */
-        margin-top: 16px;
-        margin-left: 10px;
+        margin-top: 10px;
+        margin-left: 7px;
     }
 
     /* ============ Nav-Items section ================== */
-
-    .nav-row {
-        /* margin-bottom: 10px; */
-        border-radius: 5px;
-        display: flex;
-        background: #bbff00;
-    }
-
-    .nav-row>div {
-        padding: 10px 10px 10px 10px;
-    }
-
-    .nav-col-1 label {
-        font-size: 1.4em;
-    }
-
-    /* .nav-col-2{
-        background: red;
-    } */
     #Area {
         height: 35px;
         width: 160px;
         /* border-radius: 10px; */
     }
 
-    .login-container {
-        /* border: solid; */
-        display: flex;
-
+    .a-col-1 {
+        font-size: 1.2em;
     }
 
-    .login-container input {
-        padding: 10px 10px 10px 10px;
+    #a-restaurant-select,
+    #a-dish-select,
+    #b-restaurant-select,
+    #b-dish-select,
+    #h-restaurant-select,
+    #h-dish-select {
+        width: 160px;
+        height: 30px;
     }
 
-    .login-container input {
-        width: 30%;
-        height: 35px;
-        border-radius: 10px;
-        padding-left: 15px;
-    }
-
-    .login-container .button {
-        background: white;
-        width: 15%;
-        height: 32px;
-        /* margin-bottom: 10px; */
-        padding-bottom: 0px;
-        padding-top: 0px;
-        border: none;
-        cursor: pointer;
-    }
-
-    .login-container .button:hover {
-        background: #ccc;
-    }
-
+    .city-row,
     .select-andhra {
-        /* border: solid; */
-        margin-top: 130px;
+
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        margin-top: 90px;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        background-color:palevioletred;
+        padding: 8px;
+        border-radius: 3px;
+        gap: 30px;
+
     }
 
+    .city-row h3,
     .select-andhra h3 {
         border: 0.5px solid;
-        color: orange;
-        width: 220px;
+        color: whitesmoke;
         border-radius: 5px;
-
+        font-size: 20px;
     }
 
-    .row-andhra {
-        display: flex;
-        padding: 10px 20px;
-    }
-
-    .a-col-1 {
-        font-size: 1.4em;
-        color: aqua;
-    }
-
-    #a-restaurant-select,#a-dish-select,
-    #b-restaurant-select,#b-dish-select,
-    #h-restaurant-select,#h-dish-select {
-        width: 170px;
-        height: 30px;
-        /* border: solid; */
-    }
-
-   
-    .city-row {
-        margin-top: 100px;
-        margin-bottom: -40px;
-        display: flex;
-        gap: 30px;
-    }
-
-    .city-row h3 {
-        border: 0.5px solid;
-        color: orange;
-        border-radius: 5px;
-    }
-
+    .row-andhra,
     .row-hyd,
     .row-bang {
         display: flex;
     }
-
 
     /* ===== Grid ITEMS animation ====== */
     .main-grid {
@@ -694,6 +518,7 @@ body {
         color: rgb(64, 68, 54);
         padding: 20px 15px;
     }
+
     .btns {
         display: flex;
         align-items: center;
@@ -742,93 +567,40 @@ body {
 /* ========    MEDIA QUERY FOR LARGE :TABLET FULL-screen  ========= */
 @media (min-width: 426px) and (max-width:768px) {
 
+    .carousel {
+        width: 100%;
+        height: 450px;
+        background-image: url("./कुछ\ ग़लत\ हो\ सकता\ है.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
     .carousel-inner img {
         transition: transform 3s;
         transform: scale(1.5)
     }
 
     .carousel-inner img:hover {
-        transform: scale(1.1) translate(-50px, -50px);
-
+        transform: scale(1.1) translate(90px, 20px);
     }
 
     #carouselExample img {
-        height: 500px;
+        height: 350px;
+
     }
 
     #carouselExample {
-        width: 90%;
-        margin: auto;
+        width: 80%;
+        height: 300px;
+        margin-top: 100px;
         transition: transform 2s;
-        transform: translate(-50px, 100px);
+        transform: translate(130px, 100px);
     }
 
     #carouselExample:hover {
         transform: translate(0px, 0px);
-
-        .top-carousel {
-            height: 300px;
-
-        }
     }
 
-    .top-carousel {
-        width: 100%;
-        height: 600px;
-        /* background: #bbff00; */
-        background-image: url("./कुछ\ ग़लत\ हो\ सकता\ है.jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    /* ======== Hyderabad-carousel and Bengaluru-carousel ====== */
-    .bg-Hyderabad-carousel {
-        width: 100%;
-        height: 350px;
-        background-image: url("./कुछ\ ग़लत\ हो\ सकता\ है.jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #Hyderabad-carousel {
-        width: 81%;
-        margin: auto;
-        transition: transform 2s;
-        transform: translate(60px, 50px) scale(1);
-    }
-
-    #Hyderabad-carousel:hover {
-        transform: translate(0px, 0px) scale(1);
-    }
-
-    #Hyderabad-carousel img {
-        height: 300px;
-    }
-
-    .bg-Bengaluru-carousel {
-        width: 100%;
-        height: 600px;
-        margin-top: 60px;
-        /* background: #bbff00; */
-        background-image: url("./कुछ\ ग़लत\ हो\ सकता\ है.jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #Bengaluru-carousel {
-        width: 91%;
-        margin: auto;
-        transition: transform 2s;
-        transform: translate(5px, 100px);
-    }
-
-    #Bengaluru-carousel:hover {
-        transform: translate(0px, 0px);
-    }
-
-    #Bengaluru-carousel img {
-        height: 500px;
-    }
 
 
     /* ========== LOGO RESPONSIVE ========= */
@@ -852,7 +624,7 @@ body {
 
     nav {
         width: 100%;
-        height: 18%;
+        height: 22%;
         display: flex;
         align-items: center;
         /* justify-content: center; */
@@ -862,6 +634,17 @@ body {
         top: 0;
         /* float: left; */
     }
+
+    .nav-select .home {
+        z-index: 2;
+        width: 100px;
+        height: 35px;
+        background-color: green;
+        #home{
+            color: white;
+        }
+    }
+
 
     .logo {
         /* width: 100px;
@@ -874,8 +657,8 @@ body {
     }
 
     .logo img {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         border-radius: 8px;
         position: absolute;
         z-index: 1;
@@ -883,98 +666,54 @@ body {
     }
 
     #img_div {
-        margin-top: 18px;
-        margin-left: 10px;
+        margin-top: 10px;
+        margin-left: 7px;
     }
 
     /* ============ Nav-Items section ================== */
 
-    .nav-row {
-        display: flex;
-        color: #bbff00;
-        align-items: center;
-        margin-bottom: 10px;
-        /* border: solid; */
-
-    }
-
-    .nav-col-1 label {
-        font-size: 1.4em;
-    }
-
-    /* .nav-col-2{
-        background: red;
-    } */
-    #Area {
-        height: 35px;
-        width: 150px;
-        border-radius: 5px;
-    }
-
-    .select-andhra {
-        /* border: solid; */
-        margin: 80px 0px 0px;
-        display: flex;
-        align-items: center;
-    }
-
-    .select-andhra h3 {
-        font-size: 1.5em;
-        border: 0.5px solid;
-        color: orange;
-        width: 200px;
-        border-radius: 5px;
-        margin-top: 30px;
-    }
-
-    .row-andhra {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .a-col-1,
-    .a-col-2 {
-        /* border: 0.5px solid; */
-        display: flex;
-        flex-direction: column;
-        margin-left: 40px;
-        padding-left: 40px;
-
-    }
-
     .a-col-1 {
         font-size: 1.2em;
-        color: aqua;
+        margin-left: 10px;
     }
 
-    #a-restaurant-select,#a-dish-select,
-    #b-restaurant-select,#b-dish-select,
-    #h-restaurant-select,#h-dish-select {
-        width: 160px;
+    #a-restaurant-select,
+    #a-dish-select,
+    #b-restaurant-select,
+    #b-dish-select,
+    #h-restaurant-select,
+    #h-dish-select {
+        margin-top: 25px;
+        width: 170px;
         height: 30px;
-        border-radius: 5px;
+        margin-right: 20px;
     }
 
-    .city-row {
-        margin: 100px 0px 0px;
+    .city-row,
+    .select-andhra {
+
+        position: fixed;
+        /* z-index: 1; */
+        width: 100%;
+        margin-top: 100px;
         display: flex;
-        align-items: center;
+        background-color:palevioletred;
+        border-radius: 3px;
+
     }
 
-    .city-row h3 {
-        border: 0.5px solid;
-        color: orange;
+    .city-row h3,
+    .select-andhra h3 {
+        color: white;
         border-radius: 5px;
-        margin-top: 22px;
+        font-size: 20px;
+        padding: 5px;
     }
 
+    .row-andhra,
     .row-hyd,
     .row-bang {
-        /* border: 0.5px solid; */
         display: flex;
-        flex-direction: column;
-        margin-left: 0px;
-
     }
 
     /* ===== Grid ITEMS animation ====== */
@@ -1048,94 +787,40 @@ body {
 
 /* ========    MEDIA QUERY FOR LARGE :MOBILE FULL-screen  ========= */
 @media (min-width:10px) and (max-width:425px) {
+    .carousel {
+        width: 100%;
+        height: 450px;
+        background-image: url("./कुछ\ ग़लत\ हो\ सकता\ है.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
     .carousel-inner img {
         transition: transform 3s;
-        transform: scale(1.5);
+        transform: scale(1)
     }
 
     .carousel-inner img:hover {
-        transform: scale(1.1) translate(-50px, -50px);
-
+        transform: scale(1) translate(90px, 20px);
     }
 
     #carouselExample img {
-        height: 200px;
+        height: 350px;
+
     }
 
     #carouselExample {
-        width: 90%;
-        margin: auto;
+        width: 80%;
+        height: 300px;
+        margin-top: 180px;
         transition: transform 2s;
-        transform: translate(0px, 0px);
+        transform: translate(60px, 100px);
     }
 
     #carouselExample:hover {
         transform: translate(0px, 0px);
-
-        .top-carousel {
-            height: 200px;
-
-        }
     }
 
-    .top-carousel {
-        width: 100%;
-        height: 230px;
-        /* background: #bbff00; */
-        background-image: url("./कुछ\ ग़लत\ हो\ सकता\ है.jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    /* ======== Hyderabad-carousel and Bengaluru-carousel ====== */
-    .bg-Hyderabad-carousel {
-        width: 100%;
-        height: 250px;
-        /* background: #bbff00; */
-        background-image: url("./कुछ\ ग़लत\ हो\ सकता\ है.jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #Hyderabad-carousel {
-        width: 91%;
-        margin: auto;
-        transition: transform 2s;
-        transform: translate(10px, 50px) scale(1);
-    }
-
-    #Hyderabad-carousel:hover {
-        transform: translate(0px, 0px) scale(1);
-    }
-
-    #Hyderabad-carousel img {
-        height: 200px;
-    }
-
-    .bg-Bengaluru-carousel {
-        width: 100%;
-        height: 280px;
-        margin-top: 10px;
-        /* background: #bbff00; */
-        background-image: url("./कुछ\ ग़लत\ हो\ सकता\ है.jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #Bengaluru-carousel {
-        width: 90%;
-        margin: auto;
-        transition: transform 2s;
-        transform: translate(5px, 50px);
-    }
-
-    #Bengaluru-carousel:hover {
-        transform: translate(0px, 0px);
-    }
-
-    #Bengaluru-carousel img {
-        height: 230px;
-    }
 
     /* ========== LOGO RESPONSIVE ========= */
     .nav>div:nth-child(1) {
@@ -1158,16 +843,28 @@ body {
 
     nav {
         width: 100%;
-        height: 0%;
-        display: flex;
-        align-items: center;
-        /* justify-content: center; */
         background: gray;
         position: fixed;
         z-index: 1;
         top: 0;
-        /* float: left; */
     }
+
+    .nav-select .home{
+        z-index: 2;
+        width: 70px;
+        height: 30px;
+        background-color: green;
+        margin: auto;
+        #home{
+            color: white;
+            font-size: 15px;
+
+        }
+    }
+    .nav-select{
+        /* border: solid; */
+        margin: 0px 20px 25px 0px;
+    } 
 
     .logo {
         z-index: 1;
@@ -1192,6 +889,7 @@ body {
     /* ============ Nav-Items section ================== */
     .nav-select {
         margin-left: 230px;
+        display: flex;
         flex-direction: column;
     }
 
@@ -1212,18 +910,19 @@ body {
 
 
     .select-andhra {
-        /* border: solid; */
-        margin-top: 10px;
-        margin-bottom: 10px;
+        width: 100%;
+        border: 1.1px solid;
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* justify-content: space-between; */
+        position: fixed;
+        margin-top: 180px;
+        background-color: palevioletred;
     }
 
     .select-andhra h3 {
-        margin-right: 40px;
-        font-size: 1.1em;
+        margin-right: 120px;
+        font-size: 1.09em;
         border: 0.5px solid;
         color: orange;
         border-radius: 5px;
@@ -1231,11 +930,11 @@ body {
     }
 
     .row-andhra {
-        /* border: 0.5px solid; */
         display: flex;
         flex-direction: column;
         margin-right: 0px;
         /* gap: 10px; */
+        width: 150px;
     }
 
     .a-col-1,
@@ -1243,19 +942,19 @@ body {
         /* border: 0.5px solid; */
         display: flex;
         flex-direction: column;
-        margin-right: 90px;
+        margin-right: 0px;
         /* margin-left: 120px; */
 
     }
 
     .a-col-1 {
-        /* border: solid; */
         width: 170px;
-        font-size: 1.09em;
-        color: aqua;
+        font-size: 1.1em;
+        color:rebeccapurple;
     }
 
-    #a-restaurant-select,#a-dish-select,
+    #a-restaurant-select,
+    #a-dish-select,
     #b-select,
     #h-select {
         width: 160px;
@@ -1277,10 +976,13 @@ body {
         border-radius: 5px;
     }
 
-    #a-restaurant-select, #a-dish-select,
-    #b-restaurant-select, #b-dish-select,
-    #h-restaurant-select, #h-dish-select{
-        width: 145px;
+    #a-restaurant-select,
+    #a-dish-select,
+    #b-restaurant-select,
+    #b-dish-select,
+    #h-restaurant-select,
+    #h-dish-select {
+        width: 160px;
         height: 30px;
     }
 
@@ -1288,8 +990,7 @@ body {
     .main-grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 40px;
-        padding: 50px;
+
     }
 
     .main-grid .cards .card-img {
@@ -1316,11 +1017,12 @@ body {
         padding-bottom: 0px;
         float: right;
     }
+
     .rate b {
         color: white;
         font-size: 12px;
     }
-    
+
     .rate svg {
         width: 15px;
         height: 15px;
@@ -1332,7 +1034,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        /* border: solid; */
+        margin-top: 20px;
     }
 
     .btns button {
@@ -1340,21 +1042,18 @@ body {
         justify-content: center;
         align-items: center;
         border-radius: 3px;
-        height: 20px;
+        height: 25px;
+        background: orange;
     }
 
     .btns a {
-        /* margin-left: 10px; */
         text-decoration: none;
+        color: white;
     }
 
     .btns button:hover {
         background: green;
 
-    }
-
-    .btns a:hover {
-        color: white;
     }
 
     .footer>div {

@@ -72,27 +72,18 @@
             </div>
         </div>
         <div class="nav-select">
-            <button class="home"><a href="./home.html"><strong>Home</strong></a></button>
+            <button class="home"><a href="./home.html"><strong id="home">Home</strong></a></button>
         </div>
-        <div class="nav-select">
-            <h3>Select City:~</h3>
-            <button><a href="./andhra.html"><strong>Vijayawada</strong></a></button>
-            <button><a href="./bengaluru.html"><strong>Bengaluru</strong></a></button>
-                </div>
        
-
-    </nav>
-    <!-- ======== Hyderabad block ======== -->
-
-    <div class="city-row" id="Hyderabad">
+    <div class="select-andhra" id="Hyderabad">
         <div>
-            <h3 class="hyd-h1">Hyderabad::</h3>
+            <h3 class="hyd-h1">Hyderabad Restaurants::</h3>
         </div>
         <div class="container">
             <form action="/">
                 <div class="row-hyd">
                     <div class="a-col-1">
-                        <label for="country"><b>Select Restaurant:</b></label>
+                        <label for="country"><b>Select a Restaurant:</b></label>
                     </div>
                     <div class="a-col-2">
                         <select id="h-restaurant-select" name="country">
@@ -108,19 +99,32 @@
             <form action="/">
                 <div class="row-hyd">
                     <div class="a-col-1">
-                        <label for="country"><b>Select Restaurant:</b></label>
+                        <label for="country"><b>Select a Dish:</b></label>
                     </div>
                     <div class="a-col-2">
                         <select id="h-dish-select" name="country">
-                            <option value="#Nove">Nove-The Italian Kitchen</option>
-                            <option value="#Simply">Simply South</option>
-                            <option value="#ZYTHUM">ZYTHUM Brewing Co.</option>
+                            <option value="#Barbeque">Mutton Biryani</option>
+                            <option value="#AB">Tangdi Kabab</option>
+                            <option value="#Hotel"> Mutton Curry</option>
+                            <option value="#Irohill"> Mini Veg Biryani</option>
+                            <option value="#Verandah">Mutton Pepper Fry</option>
+                            <option value="#Vindhu">Chicken Biryan</option>
+                            <option value="#Silver">Tandoori Chicken Wings (6Pcs) Carrier Meal </option>
+                            <option value="#Ghiza">Barbeque in a Box (Non Veg)</option>
+                            <option value="#Frozen">Crispy Fried Corn</option>
+                            <option value="#KFC">Cajun Spice Potato</option>
+                            <option value="#Bhojanam">Mirch Masala Paneer Tikka</option>
+                            <option value="#Vdara">Chicken Tikka Masala</option>
+                            <option value="#Vdara"> Carrier Meal</option>
                         </select>
                     </div>
                 </div>
             </form>
         </div>
     </div>
+
+    </nav>
+    <!-- ======== Hyderabad block ======== -->
 
     <script>
         function redirect(selectElement) {
@@ -132,19 +136,19 @@
     </script>
     
     <!-- ===============  Hederabad Carousel ============= -->
-    <div class="bg-Hyderabad-carousel">
-        <div id="Hyderabad-carousel" class="carousel slide">
+    <div class="carousel">
+        <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="https://b.zmtcdn.com/data/pictures/9/18843699/565978a181e8ae4ab11218dd423e1695.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
+                    <img src="https://b.zmtcdn.com/data/pictures/3/20598223/24e597bd286f3adeb21896b5a78e281c.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
                         class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src= "https://b.zmtcdn.com/data/pictures/9/20385689/bacd8897513c266c5356b20bf3fc18b5.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
+                    <img src= "https://b.zmtcdn.com/data/pictures/2/20496432/d318cf61b579cfeca96870b71c29ea5e.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
                         class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://b.zmtcdn.com/data/pictures/1/20556961/f177cec2179089ab3793cb415cb9725b.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"
+                    <img src="https://b.zmtcdn.com/data/reviews_photos/f34/9513a529c275d0df1008256f7a698f34_1487482522.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
                         class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
@@ -152,13 +156,11 @@
                         class="d-block w-100" alt="...">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#Hyderabad-carousel"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#Hyderabad-carousel"
-                data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>

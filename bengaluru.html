@@ -71,14 +71,55 @@
             </div>
         </div>
         <div class="nav-select">
-            <button class="home"><a href="./home.html"><strong>Home</strong></a></button>
+            <button class="home"><a href="./home.html"><strong id="home">Home</strong></a></button>
         </div>
-        <div class="nav-select">
-            <h3>Select City:~</h3>
-            <button><a href="./andhra.html"><strong>Vijayawada</strong></a></button>
-            <button><a href="./hyderabad.html"><strong>Hyderabad</strong></a></button>
-        </div>
-
+        <div style="background-color: aqua;" class="select-andhra" id="Bengaluru">
+            <div>
+                <h3 class="ben-h1">Bengaluru Restaurants::</h3>
+            </div>
+    
+            <div class="container">
+                <form action="/">
+                    <div class="row-andhra">
+                        <div class="a-col-1">
+                            <label for="country"><b>Select a Restaurant:</b></label>
+                        </div>
+                        <div class="a-col-2">
+                            <select id="b-restaurant-select" name="country">
+                                <option value="#Mayuri">Mayuri</option>
+                                <option value="#Commons">House Of Commons</option>
+                                <option value="#Haripriya">Haripriya</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="container">
+                <form action="/">
+                    <div class="row-bang">
+                        <div class="a-col-1">
+                            <label for="country"><b>Select a Dish:</b></label>
+                        </div>
+                        <div class="a-col-2">
+                            <select id="b-dish-select" name="country">
+                                <option value="#Barbeque"> Chicken Tikka Masal </option>
+                                <option value="#AB">Chicken Biryani</option>
+                                <option value="#Hotel"> Mutton Curry</option>
+                                <option value="#Irohill"> Mutton Pepper Fry</option>
+                                <option value="#Verandah">Carrier Meal</option>
+                                <option value="#Vindhu">Mini Veg Biryani</option>
+                                <option value="#Silver">Tandoori Chicken Wings (6Pcs) </option>
+                                <option value="#Ghiza">Barbeque in a Box (Non Veg)</option>
+                                <option value="#Frozen">Crispy Fried Corn</option>
+                                <option value="#KFC">Cajun Spice Potato</option>
+                                <option value="#Bhojanam">Mirch Masala Paneer Tikka</option>
+                                <option value="#Vdara">Tangdi Kabab</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div> 
 
     </nav>
 
@@ -86,16 +127,17 @@
 
     <!-- ======== Bengaluru block ======== -->
 
-    <div class="city-row" id="Bengaluru">
+    <!-- <div class="city-row" id="Bengaluru">
+
         <div>
-            <h3 class="ben-h1">Bengaluru::</h3>
+            <h3 class="ben-h1">Bengaluru Restaurants::</h3>
         </div>
 
         <div class="container">
             <form action="/">
                 <div class="row-bang">
                     <div class="a-col-1">
-                        <label for="country"><b>Select Restaurant:</b></label>
+                        <label for="country"><b>Select a Restaurant:</b></label>
                     </div>
                     <div class="a-col-2">
                         <select id="b-restaurant-select" name="country">
@@ -111,33 +153,43 @@
             <form action="/">
                 <div class="row-bang">
                     <div class="a-col-1">
-                        <label for="country"><b>Select Restaurant:</b></label>
+                        <label for="country"><b>Select a dish:</b></label>
                     </div>
                     <div class="a-col-2">
                         <select id="b-dish-select" name="country">
-                            <option value="#Mayuri">Mayuri</option>
-                            <option value="#Commons">House Of Commons</option>
-                            <option value="#Haripriya">Haripriya</option>
+                            <option value="#Barbeque"> Chicken Tikka Masal </option>
+                            <option value="#AB">Chicken Biryani</option>
+                            <option value="#Hotel"> Mutton Curry</option>
+                            <option value="#Irohill"> Mutton Pepper Fry</option>
+                            <option value="#Verandah">Carrier Meal</option>
+                            <option value="#Vindhu">Mini Veg Biryani</option>
+                            <option value="#Silver">Tandoori Chicken Wings (6Pcs) </option>
+                            <option value="#Ghiza">Barbeque in a Box (Non Veg)</option>
+                            <option value="#Frozen">Crispy Fried Corn</option>
+                            <option value="#KFC">Cajun Spice Potato</option>
+                            <option value="#Bhojanam">Mirch Masala Paneer Tikka</option>
+                            <option value="#Vdara">Tangdi Kabab</option>
                         </select>
                     </div>
                 </div>
             </form>
         </div>
-    </div>
+    </div> -->
+    
     <!-- ===============  Carousel ============= -->
-    <div class="bg-Bengaluru-carousel">
-        <div id="Bengaluru-carousel" class="carousel slide">
+    <div class="carousel">
+        <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="https://b.zmtcdn.com/data/pictures/9/20385689/bacd8897513c266c5356b20bf3fc18b5.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
-                        class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
                     <img src="https://b.zmtcdn.com/data/pictures/9/18843699/565978a181e8ae4ab11218dd423e1695.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
                         class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://b.zmtcdn.com/data/pictures/1/20556961/f177cec2179089ab3793cb415cb9725b.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"
+                    <img src="https://b.zmtcdn.com/data/pictures/9/20385689/bacd8897513c266c5356b20bf3fc18b5.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://b.zmtcdn.com/data/pictures/9/18843699/79813dd937caee434be0f89b3f12fa0c.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"
                         class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
@@ -145,13 +197,11 @@
                         class="d-block w-100" alt="...">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#Bengaluru-carousel"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#Bengaluru-carousel"
-                data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -400,7 +450,360 @@
                 </div>
 
             </div>
+            <div class="cards" id="Silver">
+                <div class="card-img"><img
+                        src="https://b.zmtcdn.com/data/pictures/chains/5/18755815/ece6faf2fd02cbb06298b348b24eabfc.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"
+                        alt="chicken_biryani"></div>
+                <div class="card-body">
+                    <p>
+                        <b class="rate">Silver Dum Biryani
+                            <button type="button" class="btn btn-success"><b>4.6</b>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </button>
+                            <hr>
+                        </b>
+                    </p>
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Tandoori Chicken Wings (6Pcs)
+                    </strong> <br>
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Barbeque in a Box (Non Veg)
+                    </strong> <br>
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Family Bucket - Mutton Biryani
+                    </strong> <br>
+                    <hr>
+                    <strong>Enjoy your mother’s delicious creation!🍽️🥘 </strong>
+                    <br>
+                    <div class="btns"><button class="btn-1"><a
+                                href="https://www.google.com/maps/dir/?api=1&destination=16.5003484444,80.6458269060">Direction</a></button>
+                        <button class="btn-2"><a href="https://www.zomato.com/vijayawada/barbeque-nation-labbipet">See
+                                more
+                            </a></button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cards" id="Bhojanam">
+                <div class="card-img"> <img
+                        src="https://b.zmtcdn.com/data/pictures/0/20273610/402ff962b8db3dd883ee09d2fcdc82e2.jpeg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
+                        alt="Mutton-curry"></div>
+                <div class="card-body">
+                    <p>
+                        <b class="rate">Vindhu Bhojanam
+                            <button type="button" class="btn btn-success"><b>4.5</b>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </button>
+                            <hr>
+                        </b>
+                    </p>
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Chicken Tikka Masala
+                    </strong> <br>
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Chicken Ghee Roast
+                    </strong> <br>
+                    <hr>
+                    <strong>Enjoy your mother’s delicious creation!🍽️🥘 </strong>
+                    <br>
+                    <div class="btns"><button class="btn-1"><a
+                                href="https://www.google.com/maps/dir/?api=1&destination=16.5041719563,80.6640883908">Direction</a></button>
+                        <button class="btn-2"><a
+                                href="https://www.zomato.com/vijayawada/vindhu-bhojanam-gurunanak-colony/info">See more
+                            </a></button>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="cards" id="Ghiza">
+                <div class="card-img"> <img
+                        src="https://b.zmtcdn.com/data/pictures/chains/1/18697701/9a016e764b302e49100d5ab575e275e7.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
+                        alt="chicken_fry">
+                </div>
+                <div class="card-body">
+                    <b class="rate">Ghiza Family Restaurant
+                        <button type="button" class="btn btn-success"><b>4.3</b>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </button>
+
+                        <hr>
+                    </b>
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Chicken Biryan</strong><br>
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Carrier Meal</strong> <br>
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Mutton Curry</strong><br>
+                    <hr>
+                    <strong>Enjoy your mother’s delicious creation!🍽️🥘 </strong>
+                    <div class="btns"><button class="btn-1"><a
+                                href="https://www.google.com/maps/dir/?api=1&destination=16.4973653857,80.6559596314">Direction</a></button>
+                        <button class="btn-2"><a
+                                href="https://www.zomato.com/vijayawada/ghiza-family-restaurant-labbipet/info">See
+                                more
+                            </a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards" id="KFC">
+                <div class="card-img"><img
+                        src="https://b.zmtcdn.com/data/pictures/chains/3/18698523/6e5cb6568c791166c6e73056641ce4b1.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"
+                        alt="fish_curry"></div>
+                <div class="card-body">
+                    <p> <b class="rate">KFC
+                            <button type="button" class="btn btn-success"><b>4.1</b>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </button>
+                            <hr>
+                        </b></p>
+
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Mutton Pepper Fry
+                    </strong> <br>
+
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Aglioe Olio Pasta
+                    </strong> <br>
+
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Chicken Tikka Masala
+                    </strong> <br>
+                    <hr>
+                    <strong>Enjoy your mother’s delicious creation!🍽️🥘 </strong>
+                    <br>
+                    <div class="btns"><button class="btn-1"><a
+                                href="https://www.google.com/maps/dir/?api=1&destination=16.5026363000,80.6463732000">Direction</a></button>
+                        <button class="btn-2"><a href="https://www.zomato.com/vijayawada/kfc-1-machavaram/info">See
+                                more</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="cards" id="Frozen">
+                <div class="card-img"><img
+                        src="https://b.zmtcdn.com/data/pictures/6/18759136/1dd3cdccb54ee81758a454314f3901ad.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
+                        alt="fish_fry"></div>
+                <div class="card-body">
+                    <b class="rate">Frozen Bottle
+                        <button type="button" class="btn btn-success"><b>4.6</b>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </button>
+
+                        <hr>
+                    </b>
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Chicken Biryan</strong><br>
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Carrier Meal</strong> <br>
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Mutton Curry</strong><br>
+                    <hr>
+                    <strong>Enjoy your mother’s delicious creation!🍽️🥘 </strong>
+                    <div class="btns"><button class="btn-1"><a
+                                href="https://www.google.com/maps/dir/?api=1&destination=16.5067552112,80.6449320540">Direction</a></button>
+                        <button class="btn-2"><a
+                                href="https://www.zomato.com/vijayawada/ironhill-brewery-labbipet/info">See more
+                            </a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="cards" id="Vdara">
+                <div class="card-img"> <img
+                        src="https://b.zmtcdn.com/data/pictures/5/19042265/3ef40a4c99f3979458dacf085db700c6_featured_v2.jpg"
+                        alt="Mutton-biryani"></div>
+                <div class="card-body">
+                    <p> <b class="rate">Hotel Vdara
+                            <button type="button" class="btn btn-success"><b>3.9</b>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </button>
+                            <hr>
+                        </b></p>
+
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Mutton Pepper Fry
+                    </strong> <br>
+
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Aglioe Olio Pasta
+                    </strong> <br>
+
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Chicken Tikka Masala
+                    </strong> <br>
+
+                    <strong>Enjoy your mother’s delicious creation!🍽️🥘 </strong>
+                    <br>
+                    <div class="btns"><button class="btn-1"><a
+                                href="https://www.google.com/maps/dir/?api=1&destination=16.5047258353,80.6633068621">Direction</a></button>
+                        <button class="btn-2"><a
+                                href="https://www.zomato.com/vijayawada/verandah-coffee-roasters-and-caf%C3%A9-auto-nagar/info">See
+                                more</a>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="cards" id="Mutton-curry">
+                <div class="card-img"> <img
+                        src="https://b.zmtcdn.com/data/pictures/0/20273610/402ff962b8db3dd883ee09d2fcdc82e2.jpeg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
+                        alt="Mutton-curry"></div>
+                <div class="card-body">
+                    <p>
+                        <b class="rate">Vindhu Bhojanam
+                            <button type="button" class="btn btn-success"><b>4.5</b>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                            </button>
+                            <hr>
+                        </b>
+                    </p>
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Chicken Tikka Masala
+                    </strong> <br>
+                    <strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-align-start" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5" />
+                            <path d="M3 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>Chicken Ghee Roast
+                    </strong> <br>
+                    <hr>
+                    <strong>Enjoy your mother’s delicious creation!🍽️🥘 </strong>
+                    <br>
+                    <div class="btns"><button class="btn-1"><a
+                                href="https://www.google.com/maps/dir/?api=1&destination=16.5041719563,80.6640883908">Direction</a></button>
+                        <button class="btn-2"><a
+                                href="https://www.zomato.com/vijayawada/vindhu-bhojanam-gurunanak-colony/info">See more
+                            </a></button>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
+
     </section>
 
 </body>
