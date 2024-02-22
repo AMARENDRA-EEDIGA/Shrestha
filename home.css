@@ -136,6 +136,15 @@ nav {
 .contact p{
     margin-top: 30px;
 }
+.contact strong{
+    padding-left: 10px;
+}
+.mail, .phone{
+    margin-left: 30px;
+}
+.social-media strong{
+    padding-left: 10px;
+}
 
 /* ========    MEDIA QUERY FOR LARGE :-moz-full-screen  ========= */
 @media (min-width: 1025px) {
