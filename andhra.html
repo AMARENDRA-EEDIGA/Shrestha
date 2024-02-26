@@ -130,10 +130,11 @@
     </nav>
 
     <!-- ======== Andhra block ======== -->
-   
-    <!-- ===============  Carousel ============= -->
+
+
+     <!-- ===============  Carousel ============= -->
     <div class="carousel">
-        <div id="carouselExample" class="carousel slide">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="https://b.zmtcdn.com/data/pictures/3/19489733/ac9c604fa134863cd4ddec6cc817ea12.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
@@ -162,7 +163,15 @@
             </button>
         </div>
     </div>
-
+    
+    <script>
+        // Activate the carousel
+        var carousel = new bootstrap.Carousel(document.querySelector('.carousel'), {
+            interval: 5 // Adjust the interval as per your requirement (in milliseconds)
+        });
+    </script>
+    
+   
     <!-- ============= Andhra-grid-items ========= -->
     <section>
         <div class="main-grid">

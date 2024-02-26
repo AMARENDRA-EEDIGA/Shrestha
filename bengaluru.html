@@ -119,22 +119,22 @@
     
     <!-- ===============  Carousel ============= -->
     <div class="carousel">
-        <div id="carouselExample" class="carousel slide">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
+                    <img src="https://b.zmtcdn.com/data/pictures/3/19489733/ac9c604fa134863cd4ddec6cc817ea12.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://b.zmtcdn.com/data/pictures/4/18697994/3681e6851863275de8095b6bfe03fb6f.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://b.zmtcdn.com/data/pictures/0/20273610/402ff962b8db3dd883ee09d2fcdc82e2.jpeg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
                     <img src="https://b.zmtcdn.com/data/pictures/9/18843699/565978a181e8ae4ab11218dd423e1695.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
-                        class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://b.zmtcdn.com/data/pictures/9/20385689/bacd8897513c266c5356b20bf3fc18b5.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
-                        class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://b.zmtcdn.com/data/pictures/9/18843699/79813dd937caee434be0f89b3f12fa0c.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"
-                        class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="//b.zmtcdn.com/data/pictures/5/19294965/45fb0acdd7052171cc0e5c793f129319.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"
                         class="d-block w-100" alt="...">
                 </div>
             </div>
@@ -148,7 +148,13 @@
             </button>
         </div>
     </div>
-
+    
+    <script>
+        // Activate the carousel
+        var carousel = new bootstrap.Carousel(document.querySelector('.carousel'), {
+            interval: 5 // Adjust the interval as per your requirement (in milliseconds)
+        });
+    </script>
 
     <!-- ========= Bengaluru Script code ========== -->
     <script>
