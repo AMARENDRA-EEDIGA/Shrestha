@@ -148,7 +148,17 @@ nav {
 
 /* ========    MEDIA QUERY FOR LARGE :-moz-full-screen  ========= */
 @media (min-width: 1025px) {
-    .nav>div:nth-child(1) {
+    .logoimg{
+        margin-top: 15px;
+    }
+    .logotext{
+        color: white;
+        font-size: 20px;
+        letter-spacing:0.1cap;
+        padding-left: 40px;
+        padding-top: 20px;
+    }
+    /* .nav>div:nth-child(1) {
         transition: transform 2s, rotate;
         animation: slide 2s 2;
         z-index: 2;
@@ -158,13 +168,12 @@ nav {
         transform: translate(650px, 100px) scale(1) rotate(720deg);
     }
 
-    /* lOGO animation section */
     @keyframes slide {
         100% {
             transform: translate(650px, 100px) scale(1) rotate(720deg);
 
         }
-    }
+    } */
 
     nav {
         width: 100%;
@@ -232,7 +241,19 @@ nav {
 
 /* ========    MEDIA QUERY FOR LARGE :LAPTOP FULL-screen  ========= */
 @media (min-width: 769px) and (max-width:1024px) {
-    .nav>div:nth-child(1) {
+
+    .logoimg{
+        margin-top: 25px;
+        margin-left: 10px;
+    }
+    .logotext{
+        color: white;
+        font-size: 15px;
+        letter-spacing:0.1cap;
+        padding-left: 40px;
+        padding-top: 10px;
+    }
+    /* .nav>div:nth-child(1) {
         transition: transform 2s, rotate;
         animation: slide 2s 2;
         z-index: 2;
@@ -242,13 +263,12 @@ nav {
         transform: translate(500px, 100px) scale(1) rotate(720deg);
     }
 
-    /* lOGO animation section */
     @keyframes slide {
         100% {
             transform: translate(500px, 100px) scale(1) rotate(720deg);
 
         }
-    }
+    } */
 
     nav {
         width: 100%;
@@ -290,7 +310,7 @@ nav {
     .nav-select {
         margin: auto;
         display: flex;
-        width: 700px;
+        width: 500px;
         align-items: center;
         justify-content: space-between;
         color: yellow;
@@ -357,7 +377,18 @@ nav {
 
 /* ========    MEDIA QUERY FOR LARGE :TABLET FULL-screen  ========= */
 @media (min-width: 426px) and (max-width:768px) {
-    .nav>div:nth-child(1) {
+    .logoimg{
+        margin-top: 35px;
+        margin-left: 10px;
+    }
+    .logotext{
+        color: white;
+        font-size: 15px;
+        letter-spacing:0.1cap;
+        padding-left: 40px;
+        padding-top: 10px;
+    }
+    /* .nav>div:nth-child(1) {
         transition: transform 2s, rotate;
         animation: slide 2s 2;
         z-index: 2;
@@ -367,13 +398,12 @@ nav {
         transform: translate(350px, 50px) scale(1) rotate(720deg);
     }
 
-    /* lOGO animation section */
     @keyframes slide {
         100% {
             transform: translate(350px, 50px) scale(1) rotate(720deg);
 
         }
-    }
+    } */
 
     nav {
         width: 100%;
@@ -397,8 +427,8 @@ nav {
     }
 
     .logo img {
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
         border-radius: 8px;
         position: absolute;
         z-index: 1;
@@ -413,10 +443,14 @@ nav {
 
     /* ============ Nav-Items section ================== */
 
+    .nav-select{
+        width: 400px;
+        margin-right: 30px;
+    }
     .nav-select>button {
-        width: 150px;
-        height: 35px;
-        border-radius: 8px;
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
         font-size: 1.01em;
     }
 
@@ -470,7 +504,18 @@ nav {
 
 /* ========    MEDIA QUERY FOR LARGE :MOBILE FULL-screen  ========= */
 @media (min-width:10px) and (max-width:425px) {
-    .nav>div:nth-child(1) {
+    .logoimg{
+        margin-top: px;
+        margin-left: 10px;
+    }
+    .logotext{
+        color: white;
+        font-size: 15px;
+        letter-spacing:0.1cap;
+        padding-left: 30px;
+        padding-top: 5px;
+    }
+    /* .nav>div:nth-child(1) {
         transition: transform 2s, rotate;
         animation: slide 2s 2;
         z-index: 2;
@@ -480,13 +525,12 @@ nav {
         transform: translate(150px, 50px) scale(1) rotate(720deg);
     }
 
-    /* lOGO animation section */
     @keyframes slide {
         100% {
             transform: translate(150px, 50px) scale(1) rotate(720deg);
 
         }
-    }
+    } */
 
     nav {
         width: 100%;
@@ -500,13 +544,6 @@ nav {
         z-index: 1;
         top: 0;
         float: left;
-    }
-
-    .logo {
-        z-index: 1;
-        position: absolute;
-        margin: 5px;
-        margin-bottom: 40px;
     }
 
     .logo img {
@@ -526,14 +563,9 @@ nav {
     /* ============ Nav-Items section ================== */
 
     .nav-select {
-        /* margin: auto; */
         display: flex;
-        width: 100%;
-        
-    }
-    .nav-select>h3 {
-        font-size: 13px;
-        color: yellow;
+        width: 50%;
+        margin-right: 30px;
     }
     
     .nav-select>button {
@@ -541,7 +573,7 @@ nav {
         width: 70px;
         height: 25px;
         border-radius: 5px;
-        font-size: 12px;
+        font-size: 10px;
     }
     .login-container {
         display: none;
