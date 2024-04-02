@@ -153,10 +153,10 @@ nav {
     }
     .logotext{
         color: white;
-        font-size: 20px;
+        font-size: 25px;
         letter-spacing:0.1cap;
-        padding-left: 40px;
-        padding-top: 20px;
+        padding-left: 50px;
+        padding-top: 15px;
     }
     /* .nav>div:nth-child(1) {
         transition: transform 2s, rotate;

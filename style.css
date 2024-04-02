@@ -147,17 +147,16 @@ body {
 
 /* ========    MEDIA QUERY FOR LARGE :-moz-full-screen  ========= */
 @media (min-width: 1025px) {
-    .logoimg {
-        margin-top: 10px;
-        margin-left: 10px;
-    }
 
-    .logotext {
+    .logoimg{
+        margin-top: 15px;
+    }
+    .logotext{
         color: white;
-        font-size: 20px;
-        letter-spacing: 0.1cap;
-        padding-left: 40px;
-        padding-top: 5px;
+        font-size: 25px;
+        letter-spacing:0.1cap;
+        padding-left: 50px;
+        padding-top: 10px;
     }
     
     .nav-select{
@@ -201,8 +200,8 @@ body {
     }
 
     .logo img {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         border-radius: 8px;
         position: absolute;
         z-index: 1;
@@ -392,6 +391,16 @@ body {
 
 /* ========    MEDIA QUERY FOR LARGE :LAPTOP FULL-screen  ========= */
 @media (min-width: 769px) and (max-width:1024px) {
+    .logoimg{
+        margin-top: 15px;
+    }
+    .logotext{
+        color: white;
+        font-size: 20px;
+        letter-spacing:0.1cap;
+        padding-left: 50px;
+        padding-top: 20px;
+    }
     .carousel {
         width: 100%;
         height: 450px;
@@ -473,8 +482,8 @@ body {
     }
 
     .logo img {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         position: absolute;
         z-index: 1;
     }
@@ -607,6 +616,16 @@ body {
 
 /* ========    MEDIA QUERY FOR LARGE :TABLET FULL-screen  ========= */
 @media (min-width: 426px) and (max-width:768px) {
+    .logoimg{
+        margin-top: 10px;
+    }
+    .logotext{
+        color: white;
+        font-size: 15px;
+        letter-spacing:0.1cap;
+        padding-left: 40px;
+        padding-top: 20px;
+    }
 
     .carousel {
         width: 100%;
@@ -699,8 +718,8 @@ body {
     }
 
     .logo img {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         border-radius: 8px;
         position: absolute;
         z-index: 1;
@@ -917,8 +936,8 @@ body {
     }
 
     .logo img {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         border-radius: 8px;
         position: absolute;
         z-index: 1;
